@@ -1,0 +1,1609 @@
+
+novoapp.elf:     file format elf32-littlenios2
+novoapp.elf
+architecture: nios2, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00008020
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00008000 paddr 0x00008000 align 2**12
+         filesz 0x00000020 memsz 0x00000020 flags r-x
+    LOAD off    0x00001020 vaddr 0x00008020 paddr 0x00008020 align 2**12
+         filesz 0x000007c8 memsz 0x000007c8 flags r-x
+    LOAD off    0x000017e8 vaddr 0x000087e8 paddr 0x000087ec align 2**12
+         filesz 0x00000004 memsz 0x00000004 flags rw-
+    LOAD off    0x000017f0 vaddr 0x000087f0 paddr 0x000087f0 align 2**12
+         filesz 0x00000000 memsz 0x00000040 flags rw-
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .entry        00000020  00008000  00008000  00001000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text         000007c8  00008020  00008020  00001020  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .rwdata       00000004  000087e8  000087ec  000017e8  2**2
+                  CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
+  3 .bss          00000040  000087f0  000087f0  000017f0  2**2
+                  ALLOC, SMALL_DATA
+  4 .comment      00000023  00000000  00000000  000017ec  2**0
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000230  00000000  00000000  00001810  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000227d  00000000  00000000  00001a40  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00001056  00000000  00000000  00003cbd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000a25  00000000  00000000  00004d13  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000040c  00000000  00000000  00005738  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000b6e  00000000  00000000  00005b44  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000005f5  00000000  00000000  000066b2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_alt_sim_info 00000030  00000000  00000000  00006ca8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_ranges 000000c0  00000000  00000000  00006cd8  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .thread_model 00000003  00000000  00000000  00008314  2**0
+                  CONTENTS, READONLY
+ 15 .cpu          00000003  00000000  00000000  00008317  2**0
+                  CONTENTS, READONLY
+ 16 .qsys         00000001  00000000  00000000  0000831a  2**0
+                  CONTENTS, READONLY
+ 17 .simulation_enabled 00000001  00000000  00000000  0000831b  2**0
+                  CONTENTS, READONLY
+ 18 .sysid_hash   00000004  00000000  00000000  0000831c  2**0
+                  CONTENTS, READONLY
+ 19 .sysid_base   00000004  00000000  00000000  00008320  2**0
+                  CONTENTS, READONLY
+ 20 .sysid_time   00000004  00000000  00000000  00008324  2**0
+                  CONTENTS, READONLY
+ 21 .stderr_dev   00000009  00000000  00000000  00008328  2**0
+                  CONTENTS, READONLY
+ 22 .stdin_dev    00000009  00000000  00000000  00008331  2**0
+                  CONTENTS, READONLY
+ 23 .stdout_dev   00000009  00000000  00000000  0000833a  2**0
+                  CONTENTS, READONLY
+ 24 .sopc_system_name 00000008  00000000  00000000  00008343  2**0
+                  CONTENTS, READONLY
+ 25 .quartus_project_dir 00000016  00000000  00000000  0000834b  2**0
+                  CONTENTS, READONLY
+ 26 .jdi          00004945  00000000  00000000  00008361  2**0
+                  CONTENTS, READONLY
+ 27 .sopcinfo     0005b9b3  00000000  00000000  0000cca6  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00008000 l    d  .entry	00000000 .entry
+00008020 l    d  .text	00000000 .text
+000087e8 l    d  .rwdata	00000000 .rwdata
+000087f0 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_alt_sim_info	00000000 .debug_alt_sim_info
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 ../novoapp_bsp//obj/HAL/src/crt0.o
+00008068 l       .text	00000000 alt_after_alt_main
+00000000 l    df *ABS*	00000000 hello_world_small.cpp
+00008188 l     F .text	00000030 _GLOBAL__sub_I_controller
+00000000 l    df *ABS*	00000000 Controller.cpp
+00000000 l    df *ABS*	00000000 Display.cpp
+00000000 l    df *ABS*	00000000 Selector.cpp
+00000000 l    df *ABS*	00000000 ChocolateReservoir.cpp
+00000000 l    df *ABS*	00000000 CoffeReservoir.cpp
+00000000 l    df *ABS*	00000000 MilkReservoir.cpp
+00000000 l    df *ABS*	00000000 SugarReservoir.cpp
+00000000 l    df *ABS*	00000000 alt_load.c
+00000000 l    df *ABS*	00000000 alt_main.c
+00000000 l    df *ABS*	00000000 alt_sys_init.c
+00000000 l    df *ABS*	00000000 alt_dcache_flush_all.c
+00000000 l    df *ABS*	00000000 alt_do_ctors.c
+00000000 l    df *ABS*	00000000 alt_icache_flush_all.c
+00000000 l    df *ABS*	00000000 altera_nios2_qsys_irq.c
+00000000 l    df *ABS*	00000000 alt_icache_flush.c
+00000000 l    df *ABS*	00000000 
+000086e4 g     F .text	00000030 alt_main
+000087ec g       *ABS*	00000000 __flash_rwdata_start
+000083b0 g     F .text	0000008c _ZN7Display11refreshLedsEv
+000085a4 g     F .text	00000004 _ZN14CoffeReservoirC2Ev
+000085bc g     F .text	00000008 _ZN13MilkReservoir9setAmountEi
+0000850c g     F .text	00000014 _ZN8Selector17isPrepararPressedEv
+0000845c g     F .text	00000008 _ZN7Display16setLedMocacchinoEi
+000087e8 g     O .rwdata	00000004 jtag_uart
+00008000 g     F .entry	0000001c __reset
+00008020 g       *ABS*	00000000 __flash_exceptions_start
+000087fc g     O .bss	00000004 alt_argv
+000107e8 g       *ABS*	00000000 _gp
+000085c4 g     F .text	00000008 _ZN13MilkReservoir9getAmountEv
+00008594 g     F .text	00000008 _ZN18ChocolateReservoir9setAmountEi
+000087ac g     F .text	00000038 alt_icache_flush
+00008590 g     F .text	00000004 _ZN18ChocolateReservoirC2Ev
+000084d0 g     F .text	00000038 _ZN7Display8showWaitEv
+0000859c g     F .text	00000008 _ZN18ChocolateReservoir9getAmountEv
+00008390 g     F .text	00000004 _ZN10Controller4makeE10coffeTypesb
+00008830 g       *ABS*	00000000 __bss_end
+00008804 g     O .bss	0000001c display
+000085a8 g     F .text	00000008 _ZN14CoffeReservoir9setAmountEi
+000087f0 g     O .bss	00000004 state
+000081b8 g     F .text	00000038 _ZN10ControllerC1Ev
+0000843c g     F .text	00000008 _ZN7Display11setLedReporEi
+000085a4 g     F .text	00000004 _ZN14CoffeReservoirC1Ev
+00008738 g     F .text	00000018 alt_dcache_flush_all
+000085d8 g     F .text	00000008 _ZN14SugarReservoir9getAmountEv
+000087ec g       *ABS*	00000000 __ram_rwdata_end
+00008000 g       *ABS*	00000000 __alt_mem_onchip_memory
+000087e8 g       *ABS*	00000000 __ram_rodata_end
+000085b8 g     F .text	00000004 _ZN13MilkReservoirC1Ev
+00008830 g       *ABS*	00000000 end
+000087e4 g       *ABS*	00000000 __CTOR_LIST__
+00010000 g       *ABS*	00000000 __alt_stack_pointer
+000087f4 g     O .bss	00000001 selector
+00008020 g     F .text	0000004c _start
+000085cc g     F .text	00000004 _ZN14SugarReservoirC1Ev
+00008734 g     F .text	00000004 alt_sys_init
+000085b0 g     F .text	00000008 _ZN14CoffeReservoir9getAmountEv
+000081b8 g     F .text	00000038 _ZN10ControllerC2Ev
+000087e8 g       *ABS*	00000000 __ram_rwdata_start
+000087e8 g       *ABS*	00000000 __ram_rodata_start
+00008508 g     F .text	00000004 _ZN8SelectorC2Ev
+00008830 g       *ABS*	00000000 __alt_stack_base
+00008820 g     O .bss	00000010 controller
+00008394 g     F .text	0000001c _ZN7DisplayC1Ev
+0000844c g     F .text	00000008 _ZN7Display11setLedCoffeEi
+000087f0 g       *ABS*	00000000 __bss_start
+00008534 g     F .text	00000044 _ZN8Selector16getSelectedCoffeEv
+0000806c g     F .text	0000011c main
+000087f8 g     O .bss	00000004 alt_envp
+00008498 g     F .text	00000038 _ZN7Display8showDoneEv
+000087e8 g       *ABS*	00000000 __CTOR_END__
+000087e8 g       *ABS*	00000000 __flash_rodata_start
+00008714 g     F .text	00000020 alt_irq_init
+000085b8 g     F .text	00000004 _ZN13MilkReservoirC2Ev
+0000846c g     F .text	0000002c _ZN7Display13clearDisplaysEv
+00008800 g     O .bss	00000004 alt_argc
+00008590 g     F .text	00000004 _ZN18ChocolateReservoirC1Ev
+00008578 g     F .text	00000018 _ZN8Selector11isWithSugarEv
+00008020 g       *ABS*	00000000 __ram_exceptions_start
+000085d0 g     F .text	00000008 _ZN14SugarReservoir9setAmountEi
+000087ec g       *ABS*	00000000 _edata
+00008444 g     F .text	00000008 _ZN7Display10setLedCopoEi
+00008830 g       *ABS*	00000000 _end
+00008020 g       *ABS*	00000000 __ram_exceptions_end
+000082c0 g     F .text	000000d0 _ZN10Controller6refillE10coffeTypesb
+000081f0 g     F .text	000000d0 _ZN10Controller14needToResupplyE10coffeTypesb
+00008464 g     F .text	00000008 _ZN7Display11setLedSugarEi
+00008520 g     F .text	00000014 _ZN8Selector14isReporPressedEv
+000087a4 g     F .text	00000008 altera_nios2_qsys_irq_init
+00010000 g       *ABS*	00000000 __alt_data_end
+00008394 g     F .text	0000001c _ZN7DisplayC2Ev
+000085cc g     F .text	00000004 _ZN14SugarReservoirC2Ev
+0000801c g       .entry	00000000 _exit
+00008798 g     F .text	0000000c alt_icache_flush_all
+00008508 g     F .text	00000004 _ZN8SelectorC1Ev
+00008750 g     F .text	00000048 _do_ctors
+000085e0 g     F .text	00000104 alt_load
+00008454 g     F .text	00000008 _ZN7Display15setLedCoffeMilkEi
+
+
+
+Disassembly of section .entry:
+
+00008000 <__reset>:
+#if NIOS2_ICACHE_SIZE > 0 && defined(ALT_ALLOW_CODE_AT_RESET) && !defined(ALT_SIM_OPTIMIZE)
+    /* Assume the instruction cache size is always a power of two. */
+#if NIOS2_ICACHE_SIZE > 0x8000
+    movhi r2, %hi(NIOS2_ICACHE_SIZE)
+#else
+    movui r2, NIOS2_ICACHE_SIZE
+    8000:	00840014 	movui	r2,4096
+#endif
+
+0:
+    initi r2
+    8004:	1001483a 	initi	r2
+    addi r2, r2, -NIOS2_ICACHE_LINE_SIZE
+    8008:	10bff804 	addi	r2,r2,-32
+    bgt r2, zero, 0b
+    800c:	00bffd16 	blt	zero,r2,8004 <__reset+0x4>
+ * Jump to the _start entry point in the .text section if reset code
+ * is allowed or if optimizing for RTL simulation.
+ */
+#if defined(ALT_ALLOW_CODE_AT_RESET) || defined(ALT_SIM_OPTIMIZE)
+    /* Jump to the _start entry point in the .text section. */
+    movhi r1, %hi(_start)
+    8010:	00400034 	movhi	at,0
+    ori r1, r1, %lo(_start)
+    8014:	08600814 	ori	at,at,32800
+    jmp r1
+    8018:	0800683a 	jmp	at
+
+0000801c <_exit>:
+    801c:	00000000 	call	0 <__alt_mem_onchip_memory-0x8000>
+
+Disassembly of section .text:
+
+00008020 <_start>:
+
+    /* Assume the data cache size is always a power of two. */
+#if NIOS2_DCACHE_SIZE > 0x8000
+    movhi r2, %hi(NIOS2_DCACHE_SIZE)
+#else
+    movui r2, NIOS2_DCACHE_SIZE
+    8020:	00820014 	movui	r2,2048
+#endif
+
+0:
+    initd 0(r2)
+    8024:	10000033 	initd	0(r2)
+#ifdef NIOS2_ECC_PRESENT
+    addi r2, r2, -4
+#else
+    addi r2, r2, -NIOS2_DCACHE_LINE_SIZE
+    8028:	10bff804 	addi	r2,r2,-32
+#endif
+    bgt r2, zero, 0b
+    802c:	00bffd16 	blt	zero,r2,8024 <_start+0x4>
+
+    /*
+     * Now that the caches are initialized, set up the stack pointer and global pointer.
+     * The values provided by the linker are assumed to be correctly aligned.
+     */
+    movhi sp, %hi(__alt_stack_pointer)
+    8030:	06c00074 	movhi	sp,1
+    ori sp, sp, %lo(__alt_stack_pointer)
+    8034:	dec00014 	ori	sp,sp,0
+    movhi gp, %hi(_gp)
+    8038:	06800074 	movhi	gp,1
+    ori gp, gp, %lo(_gp)
+    803c:	d681fa14 	ori	gp,gp,2024
+ */
+#ifndef ALT_SIM_OPTIMIZE
+    /* Log that the BSS is about to be cleared. */
+    ALT_LOG_PUTS(alt_log_msg_bss)
+
+    movhi r2, %hi(__bss_start)
+    8040:	00800034 	movhi	r2,0
+    ori r2, r2, %lo(__bss_start)
+    8044:	10a1fc14 	ori	r2,r2,34800
+
+    movhi r3, %hi(__bss_end)
+    8048:	00c00034 	movhi	r3,0
+    ori r3, r3, %lo(__bss_end)
+    804c:	18e20c14 	ori	r3,r3,34864
+
+    beq r2, r3, 1f
+    8050:	10c00326 	beq	r2,r3,8060 <_start+0x40>
+
+0:
+    stw zero, (r2)
+    8054:	10000015 	stw	zero,0(r2)
+    addi r2, r2, 4
+    8058:	10800104 	addi	r2,r2,4
+    bltu r2, r3, 0b
+    805c:	10fffd36 	bltu	r2,r3,8054 <_start+0x34>
+     * section aren't defined until alt_load() has been called).
+     */
+    mov   et, zero
+#endif
+
+    call alt_load
+    8060:	00085e00 	call	85e0 <alt_load>
+
+    /* Log that alt_main is about to be called. */
+    ALT_LOG_PUTS(alt_log_msg_alt_main)
+
+    /* Call the C entry point. It should never return. */
+    call alt_main
+    8064:	00086e40 	call	86e4 <alt_main>
+
+00008068 <alt_after_alt_main>:
+
+    /* Wait in infinite loop in case alt_main does return. */
+alt_after_alt_main:
+    br alt_after_alt_main
+    8068:	003fff06 	br	8068 <alt_after_alt_main>
+
+0000806c <main>:
+
+// Estado atual da maquina de estados
+states state;
+
+int main()
+{
+    806c:	defffa04 	addi	sp,sp,-24
+    8070:	dd000415 	stw	r20,16(sp)
+    8074:	dcc00315 	stw	r19,12(sp)
+    8078:	dc800215 	stw	r18,8(sp)
+    807c:	dc400115 	stw	r17,4(sp)
+    8080:	dc000015 	stw	r16,0(sp)
+    8084:	dfc00515 	stw	ra,20(sp)
+	coffeTypes selectedCoffe = T_NONE;
+	bool withSugar = false;
+
+	state = st_SELECT;
+    8088:	d0200215 	stw	zero,-32760(gp)
+states state;
+
+int main()
+{
+	coffeTypes selectedCoffe = T_NONE;
+	bool withSugar = false;
+    808c:	0023883a 	mov	r17,zero
+// Estado atual da maquina de estados
+states state;
+
+int main()
+{
+	coffeTypes selectedCoffe = T_NONE;
+    8090:	0021883a 	mov	r16,zero
+	state = st_SELECT;
+
+	while(1)
+	{
+		// Maquina de estados iluminati
+		switch(state)
+    8094:	04800104 	movi	r18,4
+    8098:	05000074 	movhi	r20,1
+    809c:	a5203004 	addi	r20,r20,-32576
+			case st_NO_SUPPLIES:
+
+				if(selector.isReporPressed())
+				{
+					controller.refill(selectedCoffe, withSugar);
+					state = st_CHECK_REFILL;
+    80a0:	04c00044 	movi	r19,1
+	state = st_SELECT;
+
+	while(1)
+	{
+		// Maquina de estados iluminati
+		switch(state)
+    80a4:	d0a00217 	ldw	r2,-32760(gp)
+    80a8:	90bfff36 	bltu	r18,r2,80a8 <main+0x3c>
+    80ac:	1085883a 	add	r2,r2,r2
+    80b0:	1085883a 	add	r2,r2,r2
+    80b4:	1505883a 	add	r2,r2,r20
+    80b8:	10800017 	ldw	r2,0(r2)
+    80bc:	1000683a 	jmp	r2
+    80c0:	000080d4 	movui	zero,515
+    80c4:	00008108 	cmpgei	zero,zero,516
+    80c8:	00008138 	rdprs	zero,zero,516
+    80cc:	00008164 	muli	zero,zero,517
+    80d0:	00008180 	call	818 <__alt_mem_onchip_memory-0x77e8>
+		{
+			case st_SELECT:
+
+				if(selector.isPrepararPressed())
+    80d4:	d1200304 	addi	r4,gp,-32756
+    80d8:	000850c0 	call	850c <_ZN8Selector17isPrepararPressedEv>
+    80dc:	10803fcc 	andi	r2,r2,255
+    80e0:	103ff026 	beq	r2,zero,80a4 <main+0x38>
+				{
+					selectedCoffe = selector.getSelectedCoffe();
+    80e4:	d1200304 	addi	r4,gp,-32756
+    80e8:	00085340 	call	8534 <_ZN8Selector16getSelectedCoffeEv>
+    80ec:	1021883a 	mov	r16,r2
+
+					// Caso nao selecionou nenhum cafe, fica no st_SELECT
+					if(selectedCoffe == T_NONE)
+    80f0:	1000011e 	bne	r2,zero,80f8 <main+0x8c>
+    80f4:	00002206 	br	8180 <main+0x114>
+					{
+						state = st_SELECT;
+					}
+					else
+					{
+						withSugar = selector.isWithSugar();
+    80f8:	d1200304 	addi	r4,gp,-32756
+    80fc:	00085780 	call	8578 <_ZN8Selector11isWithSugarEv>
+    8100:	1023883a 	mov	r17,r2
+    8104:	00001506 	br	815c <main+0xf0>
+
+			break;
+
+			case st_CHECK_REFILL:
+
+				if(!controller.needToResupply(selectedCoffe, withSugar))
+    8108:	01000074 	movhi	r4,1
+    810c:	21220804 	addi	r4,r4,-30688
+    8110:	800b883a 	mov	r5,r16
+    8114:	89803fcc 	andi	r6,r17,255
+    8118:	00081f00 	call	81f0 <_ZN10Controller14needToResupplyE10coffeTypesb>
+    811c:	10803fcc 	andi	r2,r2,255
+    8120:	1000021e 	bne	r2,zero,812c <main+0xc0>
+				{
+					state = st_MAKE;
+    8124:	008000c4 	movi	r2,3
+    8128:	00000106 	br	8130 <main+0xc4>
+				}
+				else
+				{
+					state = st_NO_SUPPLIES;
+    812c:	00800084 	movi	r2,2
+    8130:	d0a00215 	stw	r2,-32760(gp)
+    8134:	003fdb06 	br	80a4 <main+0x38>
+
+			break;
+
+			case st_NO_SUPPLIES:
+
+				if(selector.isReporPressed())
+    8138:	d1200304 	addi	r4,gp,-32756
+    813c:	00085200 	call	8520 <_ZN8Selector14isReporPressedEv>
+    8140:	10803fcc 	andi	r2,r2,255
+    8144:	103fd726 	beq	r2,zero,80a4 <main+0x38>
+				{
+					controller.refill(selectedCoffe, withSugar);
+    8148:	01000074 	movhi	r4,1
+    814c:	21220804 	addi	r4,r4,-30688
+    8150:	800b883a 	mov	r5,r16
+    8154:	89803fcc 	andi	r6,r17,255
+    8158:	00082c00 	call	82c0 <_ZN10Controller6refillE10coffeTypesb>
+					state = st_CHECK_REFILL;
+    815c:	d4e00215 	stw	r19,-32760(gp)
+    8160:	003fd006 	br	80a4 <main+0x38>
+			break;
+
+			case st_MAKE:
+
+				// Inicia o preparo do cafe
+				controller.make(selectedCoffe, withSugar);
+    8164:	01000074 	movhi	r4,1
+    8168:	21220804 	addi	r4,r4,-30688
+    816c:	800b883a 	mov	r5,r16
+    8170:	89803fcc 	andi	r6,r17,255
+    8174:	00083900 	call	8390 <_ZN10Controller4makeE10coffeTypesb>
+				state = st_RESET;
+    8178:	d4a00215 	stw	r18,-32760(gp)
+
+			break;
+    817c:	003fc906 	br	80a4 <main+0x38>
+
+			case st_RESET:
+				//TODO: resetar os leds
+				state = st_SELECT;
+    8180:	d0200215 	stw	zero,-32760(gp)
+			break;
+    8184:	003fc706 	br	80a4 <main+0x38>
+
+00008188 <_GLOBAL__sub_I_controller>:
+		}
+	}
+
+  return 0;
+}
+    8188:	deffff04 	addi	sp,sp,-4
+#include "src/Controller.h"
+#include "src/Selector.h"
+#include "src/Display.h"
+
+// Instancias dos componentes
+Controller controller;
+    818c:	01000074 	movhi	r4,1
+    8190:	21220804 	addi	r4,r4,-30688
+			break;
+		}
+	}
+
+  return 0;
+}
+    8194:	dfc00015 	stw	ra,0(sp)
+#include "src/Controller.h"
+#include "src/Selector.h"
+#include "src/Display.h"
+
+// Instancias dos componentes
+Controller controller;
+    8198:	00081b80 	call	81b8 <_ZN10ControllerC1Ev>
+Display display;
+    819c:	01000074 	movhi	r4,1
+    81a0:	21220104 	addi	r4,r4,-30716
+    81a4:	00083940 	call	8394 <_ZN7DisplayC1Ev>
+Selector selector;
+    81a8:	d1200304 	addi	r4,gp,-32756
+			break;
+		}
+	}
+
+  return 0;
+}
+    81ac:	dfc00017 	ldw	ra,0(sp)
+    81b0:	dec00104 	addi	sp,sp,4
+#include "src/Display.h"
+
+// Instancias dos componentes
+Controller controller;
+Display display;
+Selector selector;
+    81b4:	00085081 	jmpi	8508 <_ZN8SelectorC1Ev>
+
+000081b8 <_ZN10ControllerC1Ev>:
+#include "Controller.h"
+
+Controller::Controller(){
+    81b8:	defffe04 	addi	sp,sp,-8
+    81bc:	dfc00115 	stw	ra,4(sp)
+    81c0:	dc000015 	stw	r16,0(sp)
+    81c4:	2021883a 	mov	r16,r4
+    81c8:	00085a40 	call	85a4 <_ZN14CoffeReservoirC1Ev>
+    81cc:	81000104 	addi	r4,r16,4
+    81d0:	00085b80 	call	85b8 <_ZN13MilkReservoirC1Ev>
+    81d4:	81000204 	addi	r4,r16,8
+    81d8:	00085900 	call	8590 <_ZN18ChocolateReservoirC1Ev>
+    81dc:	81000304 	addi	r4,r16,12
+
+}
+    81e0:	dfc00117 	ldw	ra,4(sp)
+    81e4:	dc000017 	ldw	r16,0(sp)
+    81e8:	dec00204 	addi	sp,sp,8
+#include "Controller.h"
+
+Controller::Controller(){
+    81ec:	00085cc1 	jmpi	85cc <_ZN14SugarReservoirC1Ev>
+
+000081f0 <_ZN10Controller14needToResupplyE10coffeTypesb>:
+
+}
+
+bool Controller::needToResupply(coffeTypes coffeType, bool isWithSugar)
+{
+    81f0:	defffd04 	addi	sp,sp,-12
+    81f4:	dc400115 	stw	r17,4(sp)
+    81f8:	dc000015 	stw	r16,0(sp)
+    81fc:	dfc00215 	stw	ra,8(sp)
+	if(isWithSugar && sugarReservoir.getAmount() == 0)
+    8200:	31803fcc 	andi	r6,r6,255
+Controller::Controller(){
+
+}
+
+bool Controller::needToResupply(coffeTypes coffeType, bool isWithSugar)
+{
+    8204:	2021883a 	mov	r16,r4
+    8208:	2823883a 	mov	r17,r5
+	if(isWithSugar && sugarReservoir.getAmount() == 0)
+    820c:	30001d26 	beq	r6,zero,8284 <_ZN10Controller14needToResupplyE10coffeTypesb+0x94>
+    8210:	21000304 	addi	r4,r4,12
+    8214:	00085d80 	call	85d8 <_ZN14SugarReservoir9getAmountEv>
+    8218:	10001626 	beq	r2,zero,8274 <_ZN10Controller14needToResupplyE10coffeTypesb+0x84>
+    821c:	00001906 	br	8284 <_ZN10Controller14needToResupplyE10coffeTypesb+0x94>
+	}
+
+	switch(coffeType)
+	{
+		case T_COFFE:
+			return coffeReservoir.getAmount() == 0;
+    8220:	8009883a 	mov	r4,r16
+    8224:	00085b00 	call	85b0 <_ZN14CoffeReservoir9getAmountEv>
+    8228:	00000606 	br	8244 <_ZN10Controller14needToResupplyE10coffeTypesb+0x54>
+		break;
+
+		case T_COFFEMILK:
+			return coffeReservoir.getAmount() == 0 &&
+    822c:	8009883a 	mov	r4,r16
+    8230:	00085b00 	call	85b0 <_ZN14CoffeReservoir9getAmountEv>
+					milkReservoir.getAmount() == 0;
+    8234:	10000126 	beq	r2,zero,823c <_ZN10Controller14needToResupplyE10coffeTypesb+0x4c>
+    8238:	00001006 	br	827c <_ZN10Controller14needToResupplyE10coffeTypesb+0x8c>
+    823c:	81000104 	addi	r4,r16,4
+    8240:	00085c40 	call	85c4 <_ZN13MilkReservoir9getAmountEv>
+    8244:	1005003a 	cmpeq	r2,r2,zero
+    8248:	00001806 	br	82ac <_ZN10Controller14needToResupplyE10coffeTypesb+0xbc>
+		break;
+
+		case T_MOCACCHINO:
+			return coffeReservoir.getAmount() == 0 &&
+    824c:	8009883a 	mov	r4,r16
+    8250:	00085b00 	call	85b0 <_ZN14CoffeReservoir9getAmountEv>
+					milkReservoir.getAmount() == 0 &&
+					chocolateReservoir.getAmount() == 0;
+    8254:	1000091e 	bne	r2,zero,827c <_ZN10Controller14needToResupplyE10coffeTypesb+0x8c>
+					milkReservoir.getAmount() == 0;
+		break;
+
+		case T_MOCACCHINO:
+			return coffeReservoir.getAmount() == 0 &&
+					milkReservoir.getAmount() == 0 &&
+    8258:	81000104 	addi	r4,r16,4
+    825c:	00085c40 	call	85c4 <_ZN13MilkReservoir9getAmountEv>
+					chocolateReservoir.getAmount() == 0;
+    8260:	1000061e 	bne	r2,zero,827c <_ZN10Controller14needToResupplyE10coffeTypesb+0x8c>
+    8264:	81000204 	addi	r4,r16,8
+    8268:	000859c0 	call	859c <_ZN18ChocolateReservoir9getAmountEv>
+    826c:	003ff506 	br	8244 <_ZN10Controller14needToResupplyE10coffeTypesb+0x54>
+    8270:	00000e06 	br	82ac <_ZN10Controller14needToResupplyE10coffeTypesb+0xbc>
+
+bool Controller::needToResupply(coffeTypes coffeType, bool isWithSugar)
+{
+	if(isWithSugar && sugarReservoir.getAmount() == 0)
+	{
+		return true;
+    8274:	00800044 	movi	r2,1
+    8278:	00000c06 	br	82ac <_ZN10Controller14needToResupplyE10coffeTypesb+0xbc>
+					milkReservoir.getAmount() == 0 &&
+					chocolateReservoir.getAmount() == 0;
+		break;
+
+		case T_NONE:
+			return false;
+    827c:	0005883a 	mov	r2,zero
+    8280:	00000a06 	br	82ac <_ZN10Controller14needToResupplyE10coffeTypesb+0xbc>
+	if(isWithSugar && sugarReservoir.getAmount() == 0)
+	{
+		return true;
+	}
+
+	switch(coffeType)
+    8284:	00800044 	movi	r2,1
+    8288:	88bfe526 	beq	r17,r2,8220 <_ZN10Controller14needToResupplyE10coffeTypesb+0x30>
+    828c:	14400216 	blt	r2,r17,8298 <_ZN10Controller14needToResupplyE10coffeTypesb+0xa8>
+    8290:	883ffa26 	beq	r17,zero,827c <_ZN10Controller14needToResupplyE10coffeTypesb+0x8c>
+    8294:	003ff606 	br	8270 <_ZN10Controller14needToResupplyE10coffeTypesb+0x80>
+    8298:	00800084 	movi	r2,2
+    829c:	88bfe326 	beq	r17,r2,822c <_ZN10Controller14needToResupplyE10coffeTypesb+0x3c>
+    82a0:	008000c4 	movi	r2,3
+    82a4:	88bff21e 	bne	r17,r2,8270 <_ZN10Controller14needToResupplyE10coffeTypesb+0x80>
+    82a8:	003fe806 	br	824c <_ZN10Controller14needToResupplyE10coffeTypesb+0x5c>
+
+		case T_NONE:
+			return false;
+			break;
+	}
+}
+    82ac:	dfc00217 	ldw	ra,8(sp)
+    82b0:	dc400117 	ldw	r17,4(sp)
+    82b4:	dc000017 	ldw	r16,0(sp)
+    82b8:	dec00304 	addi	sp,sp,12
+    82bc:	f800283a 	ret
+
+000082c0 <_ZN10Controller6refillE10coffeTypesb>:
+
+void Controller::refill(coffeTypes coffeType, bool isWithSugar)
+{
+    82c0:	defffd04 	addi	sp,sp,-12
+    82c4:	dc400115 	stw	r17,4(sp)
+    82c8:	dc000015 	stw	r16,0(sp)
+    82cc:	dfc00215 	stw	ra,8(sp)
+	if(isWithSugar)
+    82d0:	31803fcc 	andi	r6,r6,255
+			break;
+	}
+}
+
+void Controller::refill(coffeTypes coffeType, bool isWithSugar)
+{
+    82d4:	2021883a 	mov	r16,r4
+    82d8:	2823883a 	mov	r17,r5
+	if(isWithSugar)
+    82dc:	30000326 	beq	r6,zero,82ec <_ZN10Controller6refillE10coffeTypesb+0x2c>
+	{
+		sugarReservoir.setAmount(10);
+    82e0:	21000304 	addi	r4,r4,12
+    82e4:	01400284 	movi	r5,10
+    82e8:	00085d00 	call	85d0 <_ZN14SugarReservoir9setAmountEi>
+	}
+
+	switch(coffeType)
+    82ec:	00800084 	movi	r2,2
+    82f0:	88800b26 	beq	r17,r2,8320 <_ZN10Controller6refillE10coffeTypesb+0x60>
+    82f4:	008000c4 	movi	r2,3
+    82f8:	88801326 	beq	r17,r2,8348 <_ZN10Controller6refillE10coffeTypesb+0x88>
+    82fc:	00800044 	movi	r2,1
+    8300:	88801e1e 	bne	r17,r2,837c <_ZN10Controller6refillE10coffeTypesb+0xbc>
+	{
+		case T_COFFE:
+			coffeReservoir.setAmount(10);
+    8304:	8009883a 	mov	r4,r16
+    8308:	01400284 	movi	r5,10
+		break;
+
+		case T_NONE:
+			break;
+	}
+}
+    830c:	dfc00217 	ldw	ra,8(sp)
+    8310:	dc400117 	ldw	r17,4(sp)
+    8314:	dc000017 	ldw	r16,0(sp)
+    8318:	dec00304 	addi	sp,sp,12
+	}
+
+	switch(coffeType)
+	{
+		case T_COFFE:
+			coffeReservoir.setAmount(10);
+    831c:	00085a81 	jmpi	85a8 <_ZN14CoffeReservoir9setAmountEi>
+		break;
+
+		case T_COFFEMILK:
+			coffeReservoir.setAmount(10);
+    8320:	8009883a 	mov	r4,r16
+    8324:	01400284 	movi	r5,10
+    8328:	00085a80 	call	85a8 <_ZN14CoffeReservoir9setAmountEi>
+			milkReservoir.setAmount(10);
+    832c:	81000104 	addi	r4,r16,4
+    8330:	01400284 	movi	r5,10
+		break;
+
+		case T_NONE:
+			break;
+	}
+}
+    8334:	dfc00217 	ldw	ra,8(sp)
+    8338:	dc400117 	ldw	r17,4(sp)
+    833c:	dc000017 	ldw	r16,0(sp)
+    8340:	dec00304 	addi	sp,sp,12
+			coffeReservoir.setAmount(10);
+		break;
+
+		case T_COFFEMILK:
+			coffeReservoir.setAmount(10);
+			milkReservoir.setAmount(10);
+    8344:	00085bc1 	jmpi	85bc <_ZN13MilkReservoir9setAmountEi>
+		break;
+
+		case T_MOCACCHINO:
+			coffeReservoir.setAmount(10);
+    8348:	8009883a 	mov	r4,r16
+    834c:	01400284 	movi	r5,10
+    8350:	00085a80 	call	85a8 <_ZN14CoffeReservoir9setAmountEi>
+			milkReservoir.setAmount(10);
+    8354:	81000104 	addi	r4,r16,4
+    8358:	01400284 	movi	r5,10
+    835c:	00085bc0 	call	85bc <_ZN13MilkReservoir9setAmountEi>
+			chocolateReservoir.setAmount(10);
+    8360:	81000204 	addi	r4,r16,8
+    8364:	01400284 	movi	r5,10
+		break;
+
+		case T_NONE:
+			break;
+	}
+}
+    8368:	dfc00217 	ldw	ra,8(sp)
+    836c:	dc400117 	ldw	r17,4(sp)
+    8370:	dc000017 	ldw	r16,0(sp)
+    8374:	dec00304 	addi	sp,sp,12
+		break;
+
+		case T_MOCACCHINO:
+			coffeReservoir.setAmount(10);
+			milkReservoir.setAmount(10);
+			chocolateReservoir.setAmount(10);
+    8378:	00085941 	jmpi	8594 <_ZN18ChocolateReservoir9setAmountEi>
+		break;
+
+		case T_NONE:
+			break;
+	}
+}
+    837c:	dfc00217 	ldw	ra,8(sp)
+    8380:	dc400117 	ldw	r17,4(sp)
+    8384:	dc000017 	ldw	r16,0(sp)
+    8388:	dec00304 	addi	sp,sp,12
+    838c:	f800283a 	ret
+
+00008390 <_ZN10Controller4makeE10coffeTypesb>:
+
+void Controller::make(coffeTypes coffeType, bool isWithSugar)
+{
+    8390:	f800283a 	ret
+
+00008394 <_ZN7DisplayC1Ev>:
+#include "Display.h"
+
+Display::Display(){
+
+	this->_ledCopo = 0;
+    8394:	20000115 	stw	zero,4(r4)
+	this->_ledRepor = 0;
+    8398:	20000015 	stw	zero,0(r4)
+	this->_ledCoffe = 0;
+    839c:	20000215 	stw	zero,8(r4)
+	this->_ledCoffeMilk = 0;
+    83a0:	20000315 	stw	zero,12(r4)
+	this->_ledMocacchino = 0;
+    83a4:	20000415 	stw	zero,16(r4)
+	this->_ledSugar = 0;
+    83a8:	20000515 	stw	zero,20(r4)
+    83ac:	f800283a 	ret
+
+000083b0 <_ZN7Display11refreshLedsEv>:
+}
+
+void Display::refreshLeds()
+{
+
+	if(this->_ledCopo)
+    83b0:	20800117 	ldw	r2,4(r4)
+    83b4:	10000326 	beq	r2,zero,83c4 <_ZN7Display11refreshLedsEv+0x14>
+	{
+		this->_led_value += 1;
+    83b8:	20800617 	ldw	r2,24(r4)
+    83bc:	10800044 	addi	r2,r2,1
+    83c0:	20800615 	stw	r2,24(r4)
+	}
+
+	if(this->_ledRepor)
+    83c4:	20800017 	ldw	r2,0(r4)
+    83c8:	10000326 	beq	r2,zero,83d8 <_ZN7Display11refreshLedsEv+0x28>
+	{
+		this->_led_value += 2;
+    83cc:	20800617 	ldw	r2,24(r4)
+    83d0:	10800084 	addi	r2,r2,2
+    83d4:	20800615 	stw	r2,24(r4)
+	}
+
+	if(this->_ledCoffe)
+    83d8:	20800217 	ldw	r2,8(r4)
+    83dc:	10000326 	beq	r2,zero,83ec <_ZN7Display11refreshLedsEv+0x3c>
+	{
+		this->_led_value += 4;
+    83e0:	20800617 	ldw	r2,24(r4)
+    83e4:	10800104 	addi	r2,r2,4
+    83e8:	20800615 	stw	r2,24(r4)
+	}
+
+	if(this->_ledCoffeMilk)
+    83ec:	20800317 	ldw	r2,12(r4)
+    83f0:	10000326 	beq	r2,zero,8400 <_ZN7Display11refreshLedsEv+0x50>
+	{
+		this->_led_value += 8;
+    83f4:	20800617 	ldw	r2,24(r4)
+    83f8:	10800204 	addi	r2,r2,8
+    83fc:	20800615 	stw	r2,24(r4)
+	}
+
+	if(this->_ledMocacchino)
+    8400:	20800417 	ldw	r2,16(r4)
+    8404:	10000326 	beq	r2,zero,8414 <_ZN7Display11refreshLedsEv+0x64>
+	{
+		this->_led_value += 16;
+    8408:	20800617 	ldw	r2,24(r4)
+    840c:	10800404 	addi	r2,r2,16
+    8410:	20800615 	stw	r2,24(r4)
+	}
+
+	if(this->_ledSugar)
+    8414:	20800517 	ldw	r2,20(r4)
+    8418:	10000326 	beq	r2,zero,8428 <_ZN7Display11refreshLedsEv+0x78>
+	{
+		this->_led_value += 32;
+    841c:	20800617 	ldw	r2,24(r4)
+    8420:	10800804 	addi	r2,r2,32
+    8424:	20800615 	stw	r2,24(r4)
+	}
+
+	IOWR(LED_BASE,0, this->_led_value);
+    8428:	20c00617 	ldw	r3,24(r4)
+    842c:	00800074 	movhi	r2,1
+    8430:	10841c04 	addi	r2,r2,4208
+    8434:	10c00035 	stwio	r3,0(r2)
+    8438:	f800283a 	ret
+
+0000843c <_ZN7Display11setLedReporEi>:
+}
+
+void Display::setLedRepor(int status)
+{
+	this->_ledRepor = status;
+    843c:	21400015 	stw	r5,0(r4)
+	this->refreshLeds();
+    8440:	00083b01 	jmpi	83b0 <_ZN7Display11refreshLedsEv>
+
+00008444 <_ZN7Display10setLedCopoEi>:
+}
+
+void Display::setLedCopo(int status)
+{
+	this->_ledCopo = status;
+    8444:	21400115 	stw	r5,4(r4)
+	this->refreshLeds();
+    8448:	00083b01 	jmpi	83b0 <_ZN7Display11refreshLedsEv>
+
+0000844c <_ZN7Display11setLedCoffeEi>:
+}
+
+void Display::setLedCoffe(int status)
+{
+	this->_ledCoffe = status;
+    844c:	21400215 	stw	r5,8(r4)
+	this->refreshLeds();
+    8450:	00083b01 	jmpi	83b0 <_ZN7Display11refreshLedsEv>
+
+00008454 <_ZN7Display15setLedCoffeMilkEi>:
+}
+
+void Display::setLedCoffeMilk(int status)
+{
+	this->_ledCoffeMilk = status;
+    8454:	21400315 	stw	r5,12(r4)
+	this->refreshLeds();
+    8458:	00083b01 	jmpi	83b0 <_ZN7Display11refreshLedsEv>
+
+0000845c <_ZN7Display16setLedMocacchinoEi>:
+}
+
+void Display::setLedMocacchino(int status)
+{
+	this->_ledMocacchino = status;
+    845c:	21400415 	stw	r5,16(r4)
+	this->refreshLeds();
+    8460:	00083b01 	jmpi	83b0 <_ZN7Display11refreshLedsEv>
+
+00008464 <_ZN7Display11setLedSugarEi>:
+}
+
+void Display::setLedSugar(int status)
+{
+	this->_ledSugar = status;
+    8464:	21400515 	stw	r5,20(r4)
+	this->refreshLeds();
+    8468:	00083b01 	jmpi	83b0 <_ZN7Display11refreshLedsEv>
+
+0000846c <_ZN7Display13clearDisplaysEv>:
+}
+
+void Display::clearDisplays()
+{
+	IOWR(HEX0_BASE,0,127);
+    846c:	00801fc4 	movi	r2,127
+    8470:	00c00074 	movhi	r3,1
+    8474:	18c41404 	addi	r3,r3,4176
+    8478:	18800035 	stwio	r2,0(r3)
+	IOWR(HEX1_BASE,0,127);
+    847c:	18fffc04 	addi	r3,r3,-16
+    8480:	18800035 	stwio	r2,0(r3)
+	IOWR(HEX2_BASE,0,127);
+    8484:	18fffc04 	addi	r3,r3,-16
+    8488:	18800035 	stwio	r2,0(r3)
+	IOWR(HEX3_BASE,0,127);
+    848c:	18fffc04 	addi	r3,r3,-16
+    8490:	18800035 	stwio	r2,0(r3)
+    8494:	f800283a 	ret
+
+00008498 <_ZN7Display8showDoneEv>:
+}
+
+void Display::showDone()
+{
+	IOWR(HEX0_BASE,0,6);		// 0000110 --> e
+    8498:	00800074 	movhi	r2,1
+    849c:	10841404 	addi	r2,r2,4176
+    84a0:	00c00184 	movi	r3,6
+    84a4:	10c00035 	stwio	r3,0(r2)
+	IOWR(HEX1_BASE,0,43);	 	// 0101011 --> n
+    84a8:	10bffc04 	addi	r2,r2,-16
+    84ac:	00c00ac4 	movi	r3,43
+    84b0:	10c00035 	stwio	r3,0(r2)
+	IOWR(HEX2_BASE,0,35);  		// 0100011 --> o
+    84b4:	10bffc04 	addi	r2,r2,-16
+    84b8:	00c008c4 	movi	r3,35
+    84bc:	10c00035 	stwio	r3,0(r2)
+	IOWR(HEX3_BASE,0,33);		// 0100001 --> d
+    84c0:	10bffc04 	addi	r2,r2,-16
+    84c4:	00c00844 	movi	r3,33
+    84c8:	10c00035 	stwio	r3,0(r2)
+    84cc:	f800283a 	ret
+
+000084d0 <_ZN7Display8showWaitEv>:
+}
+
+void Display::showWait()
+{
+	IOWR(HEX0_BASE,0,78);  		// 1001110 --> t
+    84d0:	00800074 	movhi	r2,1
+    84d4:	10841404 	addi	r2,r2,4176
+    84d8:	00c01384 	movi	r3,78
+    84dc:	10c00035 	stwio	r3,0(r2)
+	IOWR(HEX1_BASE,0,121); 		// 1111001 --> i
+    84e0:	10bffc04 	addi	r2,r2,-16
+    84e4:	00c01e44 	movi	r3,121
+    84e8:	10c00035 	stwio	r3,0(r2)
+	IOWR(HEX2_BASE,0,8);   		// 0001000 --> a
+    84ec:	10bffc04 	addi	r2,r2,-16
+    84f0:	00c00204 	movi	r3,8
+    84f4:	10c00035 	stwio	r3,0(r2)
+	IOWR(HEX3_BASE,0,99);	 	// 1100011 --> w
+    84f8:	10bffc04 	addi	r2,r2,-16
+    84fc:	00c018c4 	movi	r3,99
+    8500:	10c00035 	stwio	r3,0(r2)
+    8504:	f800283a 	ret
+
+00008508 <_ZN8SelectorC1Ev>:
+#include "Selector.h"
+
+Selector::Selector(){
+    8508:	f800283a 	ret
+
+0000850c <_ZN8Selector17isPrepararPressedEv>:
+
+}
+
+bool Selector::isPrepararPressed()
+{
+	return IORD(PREPARAR_BASE,0) == 1;
+    850c:	00800074 	movhi	r2,1
+    8510:	10840404 	addi	r2,r2,4112
+    8514:	10800037 	ldwio	r2,0(r2)
+    8518:	10800060 	cmpeqi	r2,r2,1
+}
+    851c:	f800283a 	ret
+
+00008520 <_ZN8Selector14isReporPressedEv>:
+
+bool Selector::isReporPressed()
+{
+	return IORD(REPOR_BASE,0) == 1;
+    8520:	00800074 	movhi	r2,1
+    8524:	10840004 	addi	r2,r2,4096
+    8528:	10800037 	ldwio	r2,0(r2)
+    852c:	10800060 	cmpeqi	r2,r2,1
+}
+    8530:	f800283a 	ret
+
+00008534 <_ZN8Selector16getSelectedCoffeEv>:
+
+coffeTypes Selector::getSelectedCoffe()
+{
+	int valor_lido = IORD(SWITCH_BASE,0);
+    8534:	00800074 	movhi	r2,1
+    8538:	10841804 	addi	r2,r2,4192
+    853c:	10800037 	ldwio	r2,0(r2)
+
+	if(CHECK_BIT(valor_lido, 0))
+    8540:	10c0004c 	andi	r3,r2,1
+    8544:	1800061e 	bne	r3,zero,8560 <_ZN8Selector16getSelectedCoffeEv+0x2c>
+	{
+		return T_COFFE;
+	}
+	else if(CHECK_BIT(valor_lido, 1))
+    8548:	10c0008c 	andi	r3,r2,2
+    854c:	1800061e 	bne	r3,zero,8568 <_ZN8Selector16getSelectedCoffeEv+0x34>
+	{
+		return T_COFFEMILK;
+	}
+	else if(CHECK_BIT(valor_lido, 2))
+    8550:	1080010c 	andi	r2,r2,4
+    8554:	10000626 	beq	r2,zero,8570 <_ZN8Selector16getSelectedCoffeEv+0x3c>
+	{
+		return T_MOCACCHINO;
+    8558:	008000c4 	movi	r2,3
+    855c:	f800283a 	ret
+{
+	int valor_lido = IORD(SWITCH_BASE,0);
+
+	if(CHECK_BIT(valor_lido, 0))
+	{
+		return T_COFFE;
+    8560:	00800044 	movi	r2,1
+    8564:	f800283a 	ret
+	}
+	else if(CHECK_BIT(valor_lido, 1))
+	{
+		return T_COFFEMILK;
+    8568:	00800084 	movi	r2,2
+    856c:	f800283a 	ret
+	else if(CHECK_BIT(valor_lido, 2))
+	{
+		return T_MOCACCHINO;
+	}
+
+	return T_NONE;
+    8570:	0005883a 	mov	r2,zero
+}
+    8574:	f800283a 	ret
+
+00008578 <_ZN8Selector11isWithSugarEv>:
+
+bool Selector::isWithSugar()
+{
+	int valor_lido = IORD(SWITCH_BASE,0);
+    8578:	00800074 	movhi	r2,1
+    857c:	10841804 	addi	r2,r2,4192
+    8580:	10800037 	ldwio	r2,0(r2)
+
+	if(CHECK_BIT(valor_lido, 4))
+    8584:	1004d13a 	srli	r2,r2,4
+	}
+	else
+	{
+		return false;
+	}
+}
+    8588:	1080004c 	andi	r2,r2,1
+    858c:	f800283a 	ret
+
+00008590 <_ZN18ChocolateReservoirC1Ev>:
+#include "ChocolateReservoir.h"
+
+
+ChocolateReservoir::ChocolateReservoir(){
+    8590:	f800283a 	ret
+
+00008594 <_ZN18ChocolateReservoir9setAmountEi>:
+
+}
+
+void ChocolateReservoir::setAmount(int amount)
+{
+	this->amount = amount;
+    8594:	21400015 	stw	r5,0(r4)
+    8598:	f800283a 	ret
+
+0000859c <_ZN18ChocolateReservoir9getAmountEv>:
+}
+
+int ChocolateReservoir::getAmount()
+{
+	return this->amount;
+}
+    859c:	20800017 	ldw	r2,0(r4)
+    85a0:	f800283a 	ret
+
+000085a4 <_ZN14CoffeReservoirC1Ev>:
+#include "CoffeReservoir.h"
+
+
+CoffeReservoir::CoffeReservoir(){
+    85a4:	f800283a 	ret
+
+000085a8 <_ZN14CoffeReservoir9setAmountEi>:
+
+}
+
+void CoffeReservoir::setAmount(int amount)
+{
+	this->amount = amount;
+    85a8:	21400015 	stw	r5,0(r4)
+    85ac:	f800283a 	ret
+
+000085b0 <_ZN14CoffeReservoir9getAmountEv>:
+}
+
+int CoffeReservoir::getAmount()
+{
+	return this->amount;
+}
+    85b0:	20800017 	ldw	r2,0(r4)
+    85b4:	f800283a 	ret
+
+000085b8 <_ZN13MilkReservoirC1Ev>:
+#include "MilkReservoir.h"
+
+
+MilkReservoir::MilkReservoir(){
+    85b8:	f800283a 	ret
+
+000085bc <_ZN13MilkReservoir9setAmountEi>:
+
+}
+
+void MilkReservoir::setAmount(int amount)
+{
+	this->amount = amount;
+    85bc:	21400015 	stw	r5,0(r4)
+    85c0:	f800283a 	ret
+
+000085c4 <_ZN13MilkReservoir9getAmountEv>:
+}
+
+int MilkReservoir::getAmount()
+{
+	return this->amount;
+}
+    85c4:	20800017 	ldw	r2,0(r4)
+    85c8:	f800283a 	ret
+
+000085cc <_ZN14SugarReservoirC1Ev>:
+#include "SugarReservoir.h"
+
+
+SugarReservoir::SugarReservoir(){
+    85cc:	f800283a 	ret
+
+000085d0 <_ZN14SugarReservoir9setAmountEi>:
+
+}
+
+void SugarReservoir::setAmount(int amount)
+{
+	this->amount = amount;
+    85d0:	21400015 	stw	r5,0(r4)
+    85d4:	f800283a 	ret
+
+000085d8 <_ZN14SugarReservoir9getAmountEv>:
+}
+
+int SugarReservoir::getAmount()
+{
+	return this->amount;
+}
+    85d8:	20800017 	ldw	r2,0(r4)
+    85dc:	f800283a 	ret
+
+000085e0 <alt_load>:
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+{
+    85e0:	deffff04 	addi	sp,sp,-4
+    85e4:	dfc00015 	stw	ra,0(sp)
+    85e8:	00c00074 	movhi	r3,1
+    85ec:	18e1fa04 	addi	r3,r3,-30744
+    85f0:	01000074 	movhi	r4,1
+    85f4:	2121fb04 	addi	r4,r4,-30740
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    85f8:	1900061e 	bne	r3,r4,8614 <alt_load+0x34>
+    85fc:	00c00074 	movhi	r3,1
+    8600:	18e00804 	addi	r3,r3,-32736
+    8604:	01000074 	movhi	r4,1
+    8608:	21200804 	addi	r4,r4,-32736
+    860c:	1900151e 	bne	r3,r4,8664 <alt_load+0x84>
+    8610:	00000e06 	br	864c <alt_load+0x6c>
+ * alt_load() is called when the code is executing from flash. In this case
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+    8614:	01400074 	movhi	r5,1
+    8618:	2961fb04 	addi	r5,r5,-30740
+    861c:	00bfff04 	movi	r2,-4
+    8620:	28cbc83a 	sub	r5,r5,r3
+    8624:	288a703a 	and	r5,r5,r2
+    8628:	0005883a 	mov	r2,zero
+    862c:	00000506 	br	8644 <alt_load+0x64>
+    8630:	208f883a 	add	r7,r4,r2
+  {
+    while( to != end )
+    {
+      *to++ = *from++;
+    8634:	39c00017 	ldw	r7,0(r7)
+    8638:	188d883a 	add	r6,r3,r2
+    863c:	10800104 	addi	r2,r2,4
+    8640:	31c00015 	stw	r7,0(r6)
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+  {
+    while( to != end )
+    8644:	117ffa1e 	bne	r2,r5,8630 <alt_load+0x50>
+    8648:	003fec06 	br	85fc <alt_load+0x1c>
+    864c:	00c00074 	movhi	r3,1
+    8650:	18e1fa04 	addi	r3,r3,-30744
+    8654:	01000074 	movhi	r4,1
+    8658:	2121fa04 	addi	r4,r4,-30744
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    865c:	1900131e 	bne	r3,r4,86ac <alt_load+0xcc>
+    8660:	00000e06 	br	869c <alt_load+0xbc>
+    8664:	01400074 	movhi	r5,1
+    8668:	29600804 	addi	r5,r5,-32736
+    866c:	00bfff04 	movi	r2,-4
+    8670:	28cbc83a 	sub	r5,r5,r3
+    8674:	288a703a 	and	r5,r5,r2
+    8678:	0005883a 	mov	r2,zero
+    867c:	00000506 	br	8694 <alt_load+0xb4>
+    8680:	208f883a 	add	r7,r4,r2
+  {
+    while( to != end )
+    {
+      *to++ = *from++;
+    8684:	39c00017 	ldw	r7,0(r7)
+    8688:	188d883a 	add	r6,r3,r2
+    868c:	10800104 	addi	r2,r2,4
+    8690:	31c00015 	stw	r7,0(r6)
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+  {
+    while( to != end )
+    8694:	117ffa1e 	bne	r2,r5,8680 <alt_load+0xa0>
+    8698:	003fec06 	br	864c <alt_load+0x6c>
+  
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+    869c:	00087380 	call	8738 <alt_dcache_flush_all>
+  alt_icache_flush_all();
+}
+    86a0:	dfc00017 	ldw	ra,0(sp)
+    86a4:	dec00104 	addi	sp,sp,4
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+  alt_icache_flush_all();
+    86a8:	00087981 	jmpi	8798 <alt_icache_flush_all>
+ * alt_load() is called when the code is executing from flash. In this case
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+    86ac:	01400074 	movhi	r5,1
+    86b0:	2961fa04 	addi	r5,r5,-30744
+    86b4:	00bfff04 	movi	r2,-4
+    86b8:	28cbc83a 	sub	r5,r5,r3
+    86bc:	288a703a 	and	r5,r5,r2
+    86c0:	0005883a 	mov	r2,zero
+    86c4:	00000506 	br	86dc <alt_load+0xfc>
+    86c8:	208f883a 	add	r7,r4,r2
+    {
+      *to++ = *from++;
+    86cc:	39c00017 	ldw	r7,0(r7)
+    86d0:	188d883a 	add	r6,r3,r2
+    86d4:	10800104 	addi	r2,r2,4
+    86d8:	31c00015 	stw	r7,0(r6)
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+  {
+    while( to != end )
+    86dc:	117ffa1e 	bne	r2,r5,86c8 <alt_load+0xe8>
+    86e0:	003fee06 	br	869c <alt_load+0xbc>
+
+000086e4 <alt_main>:
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    86e4:	deffff04 	addi	sp,sp,-4
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    86e8:	0009883a 	mov	r4,zero
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    86ec:	dfc00015 	stw	ra,0(sp)
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    86f0:	00087140 	call	8714 <alt_irq_init>
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Done OS Init, calling alt_sem_create.\r\n");
+  ALT_SEM_CREATE (&alt_fd_list_lock, 1);
+
+  /* Initialize the device drivers/software components. */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling alt_sys_init.\r\n");
+  alt_sys_init();
+    86f4:	00087340 	call	8734 <alt_sys_init>
+  /* 
+   * Call the C++ constructors 
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling C++ constructors.\r\n");
+  _do_ctors ();
+    86f8:	00087500 	call	8750 <_do_ctors>
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+    86fc:	d1200617 	ldw	r4,-32744(gp)
+    8700:	d1600517 	ldw	r5,-32748(gp)
+    8704:	d1a00417 	ldw	r6,-32752(gp)
+  close(STDOUT_FILENO);
+  exit (result);
+#endif
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] After main - we should not be here?.\r\n");
+}
+    8708:	dfc00017 	ldw	ra,0(sp)
+    870c:	dec00104 	addi	sp,sp,4
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+    8710:	000806c1 	jmpi	806c <main>
+
+00008714 <alt_irq_init>:
+ * The "base" parameter is ignored and only
+ * present for backwards-compatibility.
+ */
+
+void alt_irq_init ( const void* base )
+{
+    8714:	deffff04 	addi	sp,sp,-4
+    8718:	dfc00015 	stw	ra,0(sp)
+    ALTERA_NIOS2_QSYS_IRQ_INIT ( CPU, cpu);
+    871c:	00087a40 	call	87a4 <altera_nios2_qsys_irq_init>
+ * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
+ */
+static ALT_INLINE void ALT_ALWAYS_INLINE 
+       alt_irq_cpu_enable_interrupts ()
+{
+    NIOS2_WRITE_STATUS(NIOS2_STATUS_PIE_MSK
+    8720:	00800044 	movi	r2,1
+    8724:	1001703a 	wrctl	status,r2
+    alt_irq_cpu_enable_interrupts();
+}
+    8728:	dfc00017 	ldw	ra,0(sp)
+    872c:	dec00104 	addi	sp,sp,4
+    8730:	f800283a 	ret
+
+00008734 <alt_sys_init>:
+ * Initialize the non-interrupt controller devices.
+ * Called after alt_irq_init().
+ */
+
+void alt_sys_init( void )
+{
+    8734:	f800283a 	ret
+
+00008738 <alt_dcache_flush_all>:
+void alt_dcache_flush_all (void)
+{
+#if NIOS2_DCACHE_SIZE > 0
+  char* i;
+  
+  for (i = (char*) 0; i < (char*) NIOS2_DCACHE_SIZE; i+= NIOS2_DCACHE_LINE_SIZE)
+    8738:	0005883a 	mov	r2,zero
+    873c:	00c20004 	movi	r3,2048
+  { 
+    __asm__ volatile ("flushd (%0)" :: "r" (i));
+    8740:	1000003b 	flushd	0(r2)
+void alt_dcache_flush_all (void)
+{
+#if NIOS2_DCACHE_SIZE > 0
+  char* i;
+  
+  for (i = (char*) 0; i < (char*) NIOS2_DCACHE_SIZE; i+= NIOS2_DCACHE_LINE_SIZE)
+    8744:	10800804 	addi	r2,r2,32
+    8748:	10fffd1e 	bne	r2,r3,8740 <alt_dcache_flush_all+0x8>
+  { 
+    __asm__ volatile ("flushd (%0)" :: "r" (i));
+  }
+#endif /* NIOS2_DCACHE_SIZE > 0 */
+}
+    874c:	f800283a 	ret
+
+00008750 <_do_ctors>:
+/*
+ * Run the C++ static constructors.
+ */
+
+void _do_ctors(void)
+{
+    8750:	defffd04 	addi	sp,sp,-12
+    8754:	dc400115 	stw	r17,4(sp)
+    8758:	dc000015 	stw	r16,0(sp)
+    875c:	dfc00215 	stw	ra,8(sp)
+  constructor* ctor;
+
+  for (ctor = &__CTOR_END__[-1]; ctor >= __CTOR_LIST__; ctor--)
+    8760:	04000074 	movhi	r16,1
+    8764:	8421f904 	addi	r16,r16,-30748
+    8768:	04400074 	movhi	r17,1
+    876c:	8c61f904 	addi	r17,r17,-30748
+    8770:	00000306 	br	8780 <_do_ctors+0x30>
+        (*ctor) (); 
+    8774:	80800017 	ldw	r2,0(r16)
+
+void _do_ctors(void)
+{
+  constructor* ctor;
+
+  for (ctor = &__CTOR_END__[-1]; ctor >= __CTOR_LIST__; ctor--)
+    8778:	843fff04 	addi	r16,r16,-4
+        (*ctor) (); 
+    877c:	103ee83a 	callr	r2
+
+void _do_ctors(void)
+{
+  constructor* ctor;
+
+  for (ctor = &__CTOR_END__[-1]; ctor >= __CTOR_LIST__; ctor--)
+    8780:	847ffc2e 	bgeu	r16,r17,8774 <_do_ctors+0x24>
+        (*ctor) (); 
+}
+    8784:	dfc00217 	ldw	ra,8(sp)
+    8788:	dc400117 	ldw	r17,4(sp)
+    878c:	dc000017 	ldw	r16,0(sp)
+    8790:	dec00304 	addi	sp,sp,12
+    8794:	f800283a 	ret
+
+00008798 <alt_icache_flush_all>:
+ */
+
+void alt_icache_flush_all (void)
+{
+#if NIOS2_ICACHE_SIZE > 0
+  alt_icache_flush (0, NIOS2_ICACHE_SIZE);
+    8798:	0009883a 	mov	r4,zero
+    879c:	01440004 	movi	r5,4096
+    87a0:	00087ac1 	jmpi	87ac <alt_icache_flush>
+
+000087a4 <altera_nios2_qsys_irq_init>:
+ * To initialize the internal interrupt controller, just clear the IENABLE
+ * register so that all possible IRQs are disabled.
+ */
+void altera_nios2_qsys_irq_init(void) 
+{
+    NIOS2_WRITE_IENABLE(0);
+    87a4:	000170fa 	wrctl	ienable,zero
+    87a8:	f800283a 	ret
+
+000087ac <alt_icache_flush>:
+  if (len > NIOS2_ICACHE_SIZE)
+  {
+    len = NIOS2_ICACHE_SIZE;
+  }
+
+  end = ((char*) start) + len;
+    87ac:	00840004 	movi	r2,4096
+    87b0:	1140012e 	bgeu	r2,r5,87b8 <alt_icache_flush+0xc>
+    87b4:	100b883a 	mov	r5,r2
+    87b8:	214b883a 	add	r5,r4,r5
+
+  for (i = start; i < end; i+= NIOS2_ICACHE_LINE_SIZE)
+    87bc:	2005883a 	mov	r2,r4
+    87c0:	00000206 	br	87cc <alt_icache_flush+0x20>
+  { 
+    __asm__ volatile ("flushi %0" :: "r" (i)); 
+    87c4:	1000603a 	flushi	r2
+    len = NIOS2_ICACHE_SIZE;
+  }
+
+  end = ((char*) start) + len;
+
+  for (i = start; i < end; i+= NIOS2_ICACHE_LINE_SIZE)
+    87c8:	10800804 	addi	r2,r2,32
+    87cc:	117ffd36 	bltu	r2,r5,87c4 <alt_icache_flush+0x18>
+   * For an unaligned flush request, we've got one more line left.
+   * Note that this is dependent on NIOS2_ICACHE_LINE_SIZE to be a 
+   * multiple of 2 (which it always is).
+   */
+
+  if (((alt_u32) start) & (NIOS2_ICACHE_LINE_SIZE - 1))
+    87d0:	210007cc 	andi	r4,r4,31
+    87d4:	20000126 	beq	r4,zero,87dc <alt_icache_flush+0x30>
+  {
+    __asm__ volatile ("flushi %0" :: "r" (i));
+    87d8:	1000603a 	flushi	r2
+  /* 
+   * Having flushed the cache, flush any stale instructions in the 
+   * pipeline 
+   */
+
+  __asm__ volatile ("flushp");
+    87dc:	0000203a 	flushp
+    87e0:	f800283a 	ret
+    87e4:	00008188 	cmpgei	zero,zero,518
