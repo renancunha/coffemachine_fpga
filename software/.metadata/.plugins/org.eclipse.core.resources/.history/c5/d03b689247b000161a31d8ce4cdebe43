@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////
+//  MilkReservoir.cpp
+//  Implementation of the Class MilkReservoir
+//  Created on:      16-nov-2016 09:41:53
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#include "MilkReservoir.h"
+
+
+MilkReservoir::MilkReservoir(){
+
+}
+
+
+
+MilkReservoir::~MilkReservoir(){
+
+}

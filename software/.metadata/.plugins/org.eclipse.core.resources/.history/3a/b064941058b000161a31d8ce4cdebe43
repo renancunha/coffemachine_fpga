@@ -1,0 +1,75 @@
+
+#include "sys/alt_stdio.h"
+#include "src/Defs.h"
+#include "src/Controller.h"
+#include "src/Selector.h"
+#include "src/Display.h"
+
+// Instancias dos componentes
+Controller controller;
+Display display;
+Selector selector;
+
+// Estado atual da maquina de estados
+states state;
+
+int main()
+{ 
+	coffeTypes selectedCoffe;
+	bool withSugar = false;
+
+	state = st_SELECT;
+
+	while(1)
+	{
+		// Maquina de estados iluminati
+		switch(state)
+		{
+			case st_SELECT:
+
+				//TODO: verificar se foi selecionado algum cafe
+				if(selector.isPrepararPressed())
+				{
+					selectedCoffe = selector.getSelectedCoffe();
+					withSugar = selector.isWithSugar();
+					state = st_CHECK_REFILL;
+				}
+
+			break;
+
+			case st_CHECK_REFILL:
+
+				if(!controller.needToResupply(selectedCoffe, withSugar))
+				{
+					state = st_MAKE;
+				}
+				else
+				{
+					state = st_NO_SUPPLIES;
+				}
+
+			break;
+
+			case st_NO_SUPPLIES:
+				//TODO: acender led de reposicao
+				if(selector.isReporPressed())
+				{
+					controller.refill(selectedCoffe, withSugar);
+					state = st_CHECK_REFILL;
+				}
+			break;
+
+			case st_MAKE:
+				controller.make();
+				state = st_RESET;
+			break;
+
+			case st_RESET:
+				//TODO: resetar os leds
+				state = st_SELECT;
+			break;
+		}
+	}
+
+  return 0;
+}

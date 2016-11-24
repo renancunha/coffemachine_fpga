@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////
+//  MilkReservoir.h
+//  Implementation of the Class MilkReservoir
+//  Created on:      16-nov-2016 09:41:53
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#ifndef MILKRESERVOIR_H_
+#define MILKRESERVOIR_H_
+
+class MilkReservoir
+{
+
+public:
+	MilkReservoir();
+	virtual ~MilkReservoir();
+
+};
+#endif // MILKRESERVOIR_H_

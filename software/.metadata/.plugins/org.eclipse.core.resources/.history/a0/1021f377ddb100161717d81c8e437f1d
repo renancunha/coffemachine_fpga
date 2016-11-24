@@ -1,0 +1,12 @@
+#include "sys/alt_stdio.h"
+
+class Display
+{
+
+public:
+	Display();
+
+	void clearDisplays();
+	void setLedRepor(int status);
+
+};

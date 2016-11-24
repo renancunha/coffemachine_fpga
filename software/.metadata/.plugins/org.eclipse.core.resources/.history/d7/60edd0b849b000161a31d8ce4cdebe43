@@ -1,0 +1,6 @@
+#include "CoffeReservoir.h"
+
+
+CoffeReservoir::CoffeReservoir(){
+
+}

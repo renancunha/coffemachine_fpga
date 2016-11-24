@@ -1,0 +1,6 @@
+#include "SugarReservoir.h"
+
+
+SugarReservoir::SugarReservoir(){
+
+}

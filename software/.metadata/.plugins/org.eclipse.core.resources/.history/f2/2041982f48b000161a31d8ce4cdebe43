@@ -1,0 +1,14 @@
+#include "Defs.h"
+#include "reservoirs/CoffeReservoir.h"
+
+class Controller
+{
+
+public:
+	Controller();
+
+	bool hasSuppliesEnough(coffeTypes coffeType);
+	void refillAll();
+	void make();
+};
+

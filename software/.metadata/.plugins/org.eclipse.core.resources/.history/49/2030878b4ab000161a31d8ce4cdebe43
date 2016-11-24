@@ -1,0 +1,2 @@
+typedef enum {COFFE, COFFEMILK, MOCACCHINO} coffeTypes;
+typedef enum {st_SELECT, st_CHECK_REFILL, st_NO_SUPPLIES, st_MAKE, st_RESET} states;

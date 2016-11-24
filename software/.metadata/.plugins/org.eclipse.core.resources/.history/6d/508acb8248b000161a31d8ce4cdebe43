@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////
+//  GeneralReservoir.h
+//  Implementation of the Class GeneralReservoir
+//  Created on:      16-nov-2016 09:41:54
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#if !defined(EA_E744BC2E_E739_47f1_AEBD_5ACC5BF017B2__INCLUDED_)
+#define EA_E744BC2E_E739_47f1_AEBD_5ACC5BF017B2__INCLUDED_
+
+class GeneralReservoir
+{
+
+public:
+	GeneralReservoir();
+	virtual ~GeneralReservoir();
+
+};
+#endif // !defined(EA_E744BC2E_E739_47f1_AEBD_5ACC5BF017B2__INCLUDED_)

@@ -1,0 +1,7 @@
+class CoffeReservoir
+{
+
+public:
+	CoffeReservoir();
+
+};

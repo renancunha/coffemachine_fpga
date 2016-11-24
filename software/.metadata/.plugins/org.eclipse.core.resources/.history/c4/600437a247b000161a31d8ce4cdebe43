@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////
+//  ChocolateReservoir.java
+//  Implementation of the Class ChocolateReservoir
+//  Created on:      16-nov-2016 10:52:42
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#ifndef CHOCOLATERESERVOIR_H_
+#define CHOCOLATERESERVOIR_H_
+
+class ChocolateReservoir
+{
+
+public:
+	ChocolateReservoir();
+	virtual ~ChocolateReservoir();
+
+};
+#endif // CHOCOLATERESERVOIR_H_

@@ -1,0 +1,7 @@
+class ChocolateReservoir
+{
+
+public:
+	ChocolateReservoir();
+
+};

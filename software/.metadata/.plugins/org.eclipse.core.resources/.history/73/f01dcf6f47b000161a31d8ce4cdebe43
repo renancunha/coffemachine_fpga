@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////
+//  SugarReservoir.h
+//  Implementation of the Class SugarReservoir
+//  Created on:      16-nov-2016 09:41:53
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#ifndef SUGARRESERVOIR_H_
+#define SUGARRESERVOIR_H_
+
+class SugarReservoir
+{
+
+public:
+	SugarReservoir();
+	virtual ~SugarReservoir();
+
+};
+#endif // SUGARRESERVOIR_H_

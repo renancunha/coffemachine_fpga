@@ -1,0 +1,9 @@
+#include "GeneralReservoir.h"
+
+class ChocolateReservoir : public GeneralReservoir
+{
+
+public:
+	ChocolateReservoir();
+
+};

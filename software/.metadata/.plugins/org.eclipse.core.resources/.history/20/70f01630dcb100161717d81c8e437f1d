@@ -1,0 +1,9 @@
+class Display
+{
+
+public:
+	Display();
+
+	void setLedRepor(int status);
+
+};

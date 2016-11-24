@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////
+//  SugarReservoir.cpp
+//  Implementation of the Class SugarReservoir
+//  Created on:      16-nov-2016 09:41:53
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#include "SugarReservoir.h"
+
+
+SugarReservoir::SugarReservoir(){
+
+}
+
+
+
+SugarReservoir::~SugarReservoir(){
+
+}

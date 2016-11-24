@@ -1,0 +1,29 @@
+///////////////////////////////////////////////////////////
+//  Selector.h
+//  Implementation of the Class Selector
+//  Created on:      16-nov-2016 09:41:52
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#ifndef SELECTOR_H_
+#define SELECTOR_H_
+
+extern "C"
+{
+#include "sys/alt_stdio.h"
+#include "system.h"
+#include "io.h"
+}
+
+class Selector
+{
+
+public:
+	Selector();
+	virtual ~Selector();
+
+	bool isPrepararPressed();
+	bool isReporPressed();
+
+};
+#endif // SELECTOR_H_

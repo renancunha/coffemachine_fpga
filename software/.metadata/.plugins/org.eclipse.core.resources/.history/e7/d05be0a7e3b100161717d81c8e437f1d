@@ -1,0 +1,28 @@
+#include "Selector.h"
+
+Selector::Selector(){
+
+}
+
+bool Selector::isPrepararPressed()
+{
+	return IORD(PREPARAR_BASE,0) == 1;
+}
+
+bool Selector::isReporPressed()
+{
+	return IORD(REPOR_BASE,0) == 1;
+}
+
+coffeTypes Selector::getSelectedCoffe()
+{
+	int valor_lido = IORD(SWITCH_BASE,0);
+
+	if(CHECK_BIT())
+	return T_COFFE;
+}
+
+bool Selector::isWithSugar()
+{
+	return false;
+}

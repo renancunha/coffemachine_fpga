@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////
+//  ChocolateReservoir.cpp
+//  Implementation of the Class ChocolateReservoir
+//  Created on:      16-nov-2016 10:52:42
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#include "ChocolateReservoir.h"
+
+
+ChocolateReservoir::ChocolateReservoir(){
+
+}
+
+
+
+ChocolateReservoir::~ChocolateReservoir(){
+
+}

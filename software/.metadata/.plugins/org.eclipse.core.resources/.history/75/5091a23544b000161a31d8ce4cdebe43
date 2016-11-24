@@ -1,0 +1,30 @@
+///////////////////////////////////////////////////////////
+//  CoffeMaker.h
+//  Implementation of the Class Controller
+//  Created on:      16-nov-2016 09:41:55
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#if !defined(EA_6EBE9E5F_382E_406b_ABE3_842115C20A0E__INCLUDED_)
+#define EA_6EBE9E5F_382E_406b_ABE3_842115C20A0E__INCLUDED_
+
+#include "CoffeReservoir.h"
+#include "MilkReservoir.h"
+#include "ChocolateReservoir.java"
+#include "SugarReservoir.h"
+#include "WaterReservoir.h"
+
+class Controller
+{
+
+public:
+	Controller();
+	virtual ~Controller();
+	CoffeReservoir *m_CoffeReservoir;
+	MilkReservoir *m_MilkReservoir;
+	ChocolateReservoir *m_ChocolateReservoir;
+	SugarReservoir *m_SugarReservoir;
+	WaterReservoir *m_WaterReservoir;
+
+};
+#endif // !defined(EA_6EBE9E5F_382E_406b_ABE3_842115C20A0E__INCLUDED_)

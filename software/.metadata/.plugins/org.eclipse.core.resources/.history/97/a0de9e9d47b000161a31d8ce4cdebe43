@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////
+//  CoffeReservoir.cpp
+//  Implementation of the Class CoffeReservoir
+//  Created on:      16-nov-2016 09:41:52
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#include "CoffeReservoir.h"
+
+
+CoffeReservoir::CoffeReservoir(){
+
+}
+
+
+
+CoffeReservoir::~CoffeReservoir(){
+
+}

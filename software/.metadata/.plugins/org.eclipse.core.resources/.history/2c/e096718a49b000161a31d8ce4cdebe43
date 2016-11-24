@@ -1,0 +1,14 @@
+#include "GeneralReservoir.h"
+
+class CoffeReservoir : public GeneralReservoir
+{
+
+public:
+	CoffeReservoir();
+
+	int getAmount();
+	void setAmount(int amount);
+
+private:
+	int amount;
+};

@@ -1,0 +1,16 @@
+#include "GeneralReservoir.h"
+
+
+GeneralReservoir::GeneralReservoir(){
+
+}
+
+void GeneralReservoir::setAmount(int amount)
+{
+	this.amount = amount;
+}
+
+int GeneralReservoir::getAmount()
+{
+	return this->amount;
+}

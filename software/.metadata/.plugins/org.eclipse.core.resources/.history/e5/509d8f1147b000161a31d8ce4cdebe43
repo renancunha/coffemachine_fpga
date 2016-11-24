@@ -1,0 +1,29 @@
+///////////////////////////////////////////////////////////
+//  Selector.cpp
+//  Implementation of the Class Selector
+//  Created on:      16-nov-2016 09:41:52
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#include "Selector.h"
+
+
+Selector::Selector(){
+
+}
+
+
+
+Selector::~Selector(){
+
+}
+
+bool Selector::isPrepararPressed()
+{
+	return IORD(PREPARAR_BASE,0) == 1;
+}
+
+bool Selector::isReporPressed()
+{
+	return IORD(REPOR_BASE,0) == 1;
+}

@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////
+//  Display.cpp
+//  Implementation of the Class Display
+//  Created on:      16-nov-2016 09:41:56
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#include "Display.h"
+
+
+Display::Display(){
+
+}
+
+
+
+Display::~Display(){
+
+}

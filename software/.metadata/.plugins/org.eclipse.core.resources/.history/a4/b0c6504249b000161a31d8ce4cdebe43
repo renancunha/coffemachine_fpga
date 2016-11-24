@@ -1,0 +1,9 @@
+#include "GeneralReservoir.h"
+
+class MilkReservoir : GeneralReservoir
+{
+
+public:
+	MilkReservoir();
+
+};

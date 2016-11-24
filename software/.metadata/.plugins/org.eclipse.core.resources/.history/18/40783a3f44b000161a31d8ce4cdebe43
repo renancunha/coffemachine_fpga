@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////
+//  CoffeMaker.cpp
+//  Implementation of the Class Controller
+//  Created on:      16-nov-2016 09:41:55
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#include "CoffeMaker.h"
+
+
+Controller::Controller(){
+
+}
+
+
+
+Controller::~Controller(){
+
+}

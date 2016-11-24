@@ -1,0 +1,19 @@
+///////////////////////////////////////////////////////////
+//  Display.h
+//  Implementation of the Class Display
+//  Created on:      16-nov-2016 09:41:56
+//  Original author: Renan
+///////////////////////////////////////////////////////////
+
+#ifndef DISPLAY_H_
+#define DISPLAY_H_
+
+class Display
+{
+
+public:
+	Display();
+	virtual ~Display();
+
+};
+#endif // DISPLAY_H_

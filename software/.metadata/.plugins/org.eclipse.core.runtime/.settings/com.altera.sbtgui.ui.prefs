@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=C\:\\altera_trn\\Caldeira\\software\\novoapp
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\altera_trn\\Caldeira\\CPU_NIOS.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\altera_trn\\Caldeira\\software\\novoapp_bsp

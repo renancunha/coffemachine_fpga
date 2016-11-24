@@ -1,0 +1,39 @@
+#include "Controller.h"
+
+Controller::Controller(){
+
+}
+
+bool Controller::hasSuppliesEnough(coffeTypes coffeType)
+{
+	switch(coffeType)
+	{
+		/*case COFFE:
+			return coffeReservoir.getAmount() > 0;
+		break;
+
+		case COFFEMILK:
+			return coffeReservoir.getAmount() > 0 &&
+					milkReservoir.getAmount() > 0;
+		break;
+
+		case MOCACCHINO:
+			return coffeReservoir.getAmount() > 0 &&
+					milkReservoir.getAmount() > 0 &&
+					chocolateReservoir.getAmount() > 0;
+		break;*/
+		default:
+			return true;
+		break;
+	}
+}
+
+void Controller::refillAll()
+{
+
+}
+
+void Controller::make()
+{
+
+}

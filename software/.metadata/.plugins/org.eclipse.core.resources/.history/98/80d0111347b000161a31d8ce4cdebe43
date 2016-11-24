@@ -1,0 +1,16 @@
+#include "Selector.h"
+
+
+Selector::Selector(){
+
+}
+
+bool Selector::isPrepararPressed()
+{
+	return IORD(PREPARAR_BASE,0) == 1;
+}
+
+bool Selector::isReporPressed()
+{
+	return IORD(REPOR_BASE,0) == 1;
+}
