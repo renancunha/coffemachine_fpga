@@ -151,6 +151,7 @@ CXX_SRCS += src/reservoirs/ChocolateReservoir.cpp
 CXX_SRCS += src/reservoirs/CoffeReservoir.cpp
 CXX_SRCS += src/reservoirs/MilkReservoir.cpp
 CXX_SRCS += src/reservoirs/SugarReservoir.cpp
+CXX_SRCS += src/reservoirs/WaterReservoir.cpp
 ASM_SRCS :=
 
 

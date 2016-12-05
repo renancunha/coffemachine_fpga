@@ -9,6 +9,7 @@ public:
 	Display();
 
 	void clearDisplays();
+	void clearLeds();
 	void showDone();
 	void showWait();
 
@@ -18,6 +19,8 @@ public:
 	void setLedCoffeMilk(int status);
 	void setLedMocacchino(int status);
 	void setLedSugar(int status);
+	void setLedWaterLevel(int status);
+	void setLedWaterTemp(int status);
 
 	void refreshLeds();
 
@@ -28,5 +31,7 @@ private:
 	int _ledCoffeMilk;
 	int _ledMocacchino;
 	int _ledSugar;
+	int _ledWaterLevel;
+	int _ledWaterTemp;
 	int _led_value;
 };

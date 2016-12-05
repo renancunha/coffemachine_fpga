@@ -1,12 +1,2245 @@
 
-**** Clean-only build of configuration Nios II for project novoapp ****
+**** Build of configuration Nios II for project novoapp ****
 
-make clean 
-      1 [main] sh 7940 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+make all 
+      0 [main] sh 5828 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6468 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 2532 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 6232 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2708 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5112 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 1784 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+      0 [main] mkdir 6792 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5748 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Controller.cpp to obj/default/src/Controller.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 6776 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Controller.o src/Controller.cpp
+the public mailing list cygwin@cygwin.com
+src/Controller.cpp: In member function 'bool Controller::needToResupply(coffeTypes, bool)':
+src/Controller.cpp:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+      0 [main] true 5148 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5188 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 1732 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 6124 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4164 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 3232 Bytes program size (code + initialized data).
+Info:               28 KBytes free for stack + heap.
+      0 [main] echo 3504 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 5992 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1964 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 812 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7100 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5748 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 5872 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 704 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2864 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 1464 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6004 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 4320 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1704 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6076 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 3484 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4528 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3780 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 5596 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4800 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 1436 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4616 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 2056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 2588 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4972 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2668 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 1732 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2104 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 6792 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5424 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 1044 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 6040 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 3504 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4368 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 6904 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6564 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 1816 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5732 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6232 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 4152 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2784 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3000 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 6312 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 3180 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+hello_world_small.cpp: In function 'int main()':
+hello_world_small.cpp:32:13: warning: unused variable 'selectedCoffe' [-Wunused-variable]
+hello_world_small.cpp:33:7: warning: unused variable 'withSugar' [-Wunused-variable]
+hello_world_small.cpp:34:6: warning: unused variable 'cupSize' [-Wunused-variable]
+hello_world_small.cpp:35:6: warning: unused variable 'waterTemp' [-Wunused-variable]
+hello_world_small.cpp:36:6: warning: unused variable 'waterLevel' [-Wunused-variable]
+      0 [main] true 1860 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 2460 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 4368 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 4348 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6784 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 2916 Bytes program size (code + initialized data).
+Info:               29 KBytes free for stack + heap.
+      0 [main] echo 3056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 2520 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5496 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 2252 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3792 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3536 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 3868 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6468 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 4836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 3188 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7204 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1004 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 2536 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 7648 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7596 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7820 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 5964 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 1280 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] true 6040 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7352 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 7996 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 6924 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7504 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 3308 Bytes program size (code + initialized data).
+Info:               28 KBytes free for stack + heap.
+      0 [main] echo 1184 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      1 [main] sh 7184 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 988 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 6004 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2488 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 1796 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 4160 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7308 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 6236 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 7824 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 1564 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7884 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1976 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 504 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 2496 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6784 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7012 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 3128 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 992 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7448 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: Compiling src/Selector.cpp to obj/default/src/Selector.o
+      1 [main] mkdir 7684 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Selector.o src/Selector.cpp
+      0 [main] true 8160 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] echo 888 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 7648 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 5600 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1564 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 3308 Bytes program size (code + initialized data).
+Info:               28 KBytes free for stack + heap.
+      0 [main] echo 7476 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 4940 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 612 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      1 [main] sh 2516 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1812 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 2804 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 6300 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 2056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4296 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 7404 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1432 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7848 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3372 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3248 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 2580 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7504 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4132 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 2892 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Selector.cpp to obj/default/src/Selector.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 212 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Selector.o src/Selector.cpp
+the public mailing list cygwin@cygwin.com
+      1 [main] true 2920 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 1908 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 5836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] uname 7592 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1704 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 3308 Bytes program size (code + initialized data).
+Info:               28 KBytes free for stack + heap.
+      0 [main] echo 5888 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 4164 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2060 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      1 [main] sh 1064 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 436 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5732 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 3804 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 8068 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4356 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 1352 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7492 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      1 [main] sh 836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7208 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 1796 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      1 [main] pwd 2932 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7608 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1008 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 8116 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 8180 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] true 7256 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 1056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 6316 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 6824 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3396 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 3232 Bytes program size (code + initialized data).
+Info:               28 KBytes free for stack + heap.
+      0 [main] echo 5632 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 7268 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4132 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 3168 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6312 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7320 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 4940 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7172 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 7492 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5676 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 2840 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 1008 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6780 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 8144 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5888 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4540 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 2804 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 2252 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 4920 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Selector.cpp to obj/default/src/Selector.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 2080 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Selector.o src/Selector.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] true 7448 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 2152 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 7544 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 8016 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1248 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 3840 Bytes program size (code + initialized data).
+Info:               28 KBytes free for stack + heap.
+      0 [main] echo 4372 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 7356 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6800 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7612 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7452 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7368 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 8092 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3348 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3028 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 7632 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 3604 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 8092 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 3276 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7936 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      1 [main] pwd 2864 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 8116 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6624 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 7944 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 6596 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      1 [main] echo 7412 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Controller.cpp to obj/default/src/Controller.o
+the public mailing list cygwin@cygwin.com
+      1 [main] mkdir 1028 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Controller.o src/Controller.cpp
+the public mailing list cygwin@cygwin.com
+src/Controller.cpp: In member function 'bool Controller::needToResupply(coffeTypes, bool)':
+src/Controller.cpp:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+      1 [main] true 3908 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3488 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 7224 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 6124 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7120 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 3996 Bytes program size (code + initialized data).
+Info:               28 KBytes free for stack + heap.
+      0 [main] echo 6408 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 3188 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7820 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 2136 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6468 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6944 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      1 [main] pwd 4932 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 3052 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7688 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 4864 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 6136 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7972 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6352 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 312 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      1 [main] pwd 8132 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3464 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 612 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 6392 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 7840 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6124 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Controller.cpp to obj/default/src/Controller.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 2704 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Controller.o src/Controller.cpp
+the public mailing list cygwin@cygwin.com
+src/Controller.cpp: In member function 'bool Controller::needToResupply(coffeTypes, bool)':
+src/Controller.cpp:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+      0 [main] true 8172 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7384 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 4572 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 2472 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3108 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4004 Bytes program size (code + initialized data).
+Info:               28 KBytes free for stack + heap.
+      0 [main] echo 1820 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 5664 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2464 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+[novoapp build complete]
 the public mailing list cygwin@cygwin.com
 
-**** Clean-only build of configuration Nios II for project novoapp ****
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 5548 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5676 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5972 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 3516 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1968 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7896 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 4308 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7420 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7616 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2496 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7100 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 6996 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4740 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7316 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 4832 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 7700 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 2192 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Controller.cpp to obj/default/src/Controller.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 784 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Controller.o src/Controller.cpp
+the public mailing list cygwin@cygwin.com
+src/Controller.cpp: In member function 'bool Controller::needToResupply(coffeTypes, bool)':
+src/Controller.cpp:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+      0 [main] true 32 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7716 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 5524 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 5920 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7664 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4052 Bytes program size (code + initialized data).
+Info:               28 KBytes free for stack + heap.
+      0 [main] echo 7684 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 5076 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 192 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7120 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 7300 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] echo 5044 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 3868 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7908 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7548 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 272 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 3268 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 6780 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7124 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 7784 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2692 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7756 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 6924 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 6728 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] true 1464 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7580 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 5008 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] uname 2584 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3356 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4252 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      0 [main] echo 2992 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 7056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4972 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 4172 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3348 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 8016 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 8012 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5888 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 8116 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 3944 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5132 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 4216 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4972 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3060 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 7604 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7352 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7728 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 8084 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 7872 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+hello_world_small.cpp: In function 'int main()':
+hello_world_small.cpp:55:9: warning: unused variable 'preparar' [-Wunused-variable]
+      0 [main] echo 7564 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Controller.cpp to obj/default/src/Controller.o
+the public mailing list cygwin@cygwin.com
+      1 [main] mkdir 4132 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Controller.o src/Controller.cpp
+the public mailing list cygwin@cygwin.com
+src/Controller.cpp: In member function 'bool Controller::needToResupply(coffeTypes, bool)':
+src/Controller.cpp:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+      0 [main] true 8020 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7684 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 6308 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 6696 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2864 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4244 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      0 [main] echo 7472 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 7620 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1044 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      1 [main] sh 6952 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3284 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7480 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 2660 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7964 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7348 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 2804 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7968 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7136 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7340 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6416 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 7772 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4112 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3852 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 4100 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Display.cpp to obj/default/src/Display.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 4172 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Display.o src/Display.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] true 2844 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3868 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 1976 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 3364 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 6596 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4300 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      0 [main] echo 8000 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 1296 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7904 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7248 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3188 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7472 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 2152 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 7268 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7912 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 1816 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5512 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7872 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 916 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5588 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 4508 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5624 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6872 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 6056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Display.cpp to obj/default/src/Display.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 3032 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Display.o src/Display.cpp
+the public mailing list cygwin@cygwin.com
+src/Display.cpp: In member function 'void Display::refreshLeds()':
+src/Display.cpp:59:29: error: invalid conversion from 'int' to 'const char*' [-fpermissive]
+In file included from src/Display.h:1:0,
+                 from src/Display.cpp:1:
+../novoapp_bsp//HAL/inc/sys/alt_stdio.h:56:6: error:   initializing argument 1 of 'void alt_printf(const char*, ...)' [-fpermissive]
+make: *** [obj/default/src/Display.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7780 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3272 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3116 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 3328 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 1784 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5660 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 3112 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Display.cpp to obj/default/src/Display.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 4336 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Display.o src/Display.cpp
+the public mailing list cygwin@cygwin.com
+src/Display.cpp: In member function 'void Display::refreshLeds()':
+src/Display.cpp:59:29: error: invalid conversion from 'int' to 'const char*' [-fpermissive]
+In file included from src/Display.h:1:0,
+                 from src/Display.cpp:1:
+../novoapp_bsp//HAL/inc/sys/alt_stdio.h:56:6: error:   initializing argument 1 of 'void alt_printf(const char*, ...)' [-fpermissive]
+make: *** [obj/default/src/Display.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7452 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2540 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 8096 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 7388 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1528 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3116 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 6624 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Display.cpp to obj/default/src/Display.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 4508 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Display.o src/Display.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] true 4468 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 8044 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 8164 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 5548 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2080 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4292 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      0 [main] echo 6828 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 6416 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 7772 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 8016 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6624 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 4320 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 4468 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1064 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 8044 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 6844 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3516 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7420 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7256 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7272 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 3268 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5156 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6148 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 7268 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 2776 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+hello_world_small.cpp: In function 'int main()':
+hello_world_small.cpp:57:9: warning: unused variable 'preparar' [-Wunused-variable]
+      0 [main] true 7612 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7504 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 5964 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 6396 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7608 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4300 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      0 [main] echo 556 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 400 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1976 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 5992 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6468 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 4164 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 2252 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7540 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7960 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 3164 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2660 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 3868 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2840 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 4920 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 2080 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7124 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2136 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 6648 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 6124 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+hello_world_small.cpp: In function 'int main()':
+hello_world_small.cpp:84:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:97:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:107:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:126:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:53:9: warning: enumeration value 'st_CHECK_REFILL' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_NO_SUPPLIES' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_MAKE' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_RESET' not handled in switch [-Wswitch]
+hello_world_small.cpp:34:6: warning: unused variable 'cupSize' [-Wunused-variable]
+make: *** [obj/default/hello_world_small.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 2936 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4988 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 168 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 2920 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3048 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3276 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 7944 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 7452 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+hello_world_small.cpp: In function 'int main()':
+hello_world_small.cpp:84:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:97:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:107:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:126:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:53:9: warning: enumeration value 'st_CHECK_REFILL' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_NO_SUPPLIES' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_MAKE' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_RESET' not handled in switch [-Wswitch]
+hello_world_small.cpp:34:6: warning: unused variable 'cupSize' [-Wunused-variable]
+make: *** [obj/default/hello_world_small.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 436 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6256 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 4276 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 8096 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4108 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 96 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 1048 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 4376 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+hello_world_small.cpp: In function 'int main()':
+hello_world_small.cpp:84:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:97:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:107:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:126:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:53:9: warning: enumeration value 'st_CHECK_REFILL' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_NO_SUPPLIES' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_MAKE' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_RESET' not handled in switch [-Wswitch]
+hello_world_small.cpp:34:6: warning: unused variable 'cupSize' [-Wunused-variable]
+make: *** [obj/default/hello_world_small.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 3896 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6872 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7480 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 5888 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7840 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5924 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 1376 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 3060 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+hello_world_small.cpp: In function 'int main()':
+hello_world_small.cpp:84:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:97:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:107:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:126:9: error: jump to case label [-fpermissive]
+hello_world_small.cpp:63:9: error:   crosses initialization of 'int cupSize'
+hello_world_small.cpp:53:9: warning: enumeration value 'st_CHECK_REFILL' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_NO_SUPPLIES' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_MAKE' not handled in switch [-Wswitch]
+hello_world_small.cpp:53:9: warning: enumeration value 'st_RESET' not handled in switch [-Wswitch]
+hello_world_small.cpp:34:6: warning: unused variable 'cupSize' [-Wunused-variable]
+make: *** [obj/default/hello_world_small.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7728 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7736 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 1708 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 2684 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6848 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1704 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 2204 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 4272 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      1 [main] echo 2320 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Display.cpp to obj/default/src/Display.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 7828 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Display.o src/Display.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] true 6392 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3632 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 1508 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 3412 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2488 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4212 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      1 [main] echo 1264 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      1 [main] sh 3168 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 4248 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7632 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7800 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 3300 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4848 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5816 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 2924 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2272 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      1 [main] sh 4772 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 272 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3412 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 3868 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7808 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1224 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 7832 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Display.cpp to obj/default/src/Display.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 3456 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Display.o src/Display.cpp
+      0 [main] true 8184 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] echo 4276 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 3804 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 3168 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3368 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4244 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      0 [main] echo 7232 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 7616 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7308 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 3300 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6848 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] echo 7728 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 7760 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6060 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4832 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 6352 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1280 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 5596 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3944 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7340 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 7768 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2936 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5008 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 7372 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Display.cpp to obj/default/src/Display.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 2680 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Display.o src/Display.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] true 1776 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5628 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 4360 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 2028 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 6624 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4396 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      0 [main] echo 7844 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 1428 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3296 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 8172 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4772 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 4528 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 5400 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7428 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 216 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 6888 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2128 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7624 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2940 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3456 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 6352 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3864 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1212 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 984 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 7796 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] true 4312 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 400 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 5836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 5656 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4872 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4420 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      0 [main] echo 1828 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 2836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7504 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 5216 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4832 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5612 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 7640 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 4376 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2584 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 7280 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5968 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      1 [main] sh 7172 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 1048 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5968 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      1 [main] pwd 6744 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4136 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4352 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 7868 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Controller.cpp to obj/default/src/Controller.o
+the public mailing list cygwin@cygwin.com
+      1 [main] mkdir 7192 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Controller.o src/Controller.cpp
+the public mailing list cygwin@cygwin.com
+src/Controller.cpp: In member function 'bool Controller::needToResupply(coffeTypes, bool)':
+src/Controller.cpp:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+      0 [main] true 1820 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7284 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 3060 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 8120 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4464 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4448 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      0 [main] echo 6712 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 5548 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4172 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 8040 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6744 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 8144 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7972 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5104 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 2840 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7436 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7980 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2204 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7264 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 2516 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7936 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7292 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 5932 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 3100 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7996 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/reservoirs/ChocolateReservoir.cpp to obj/default/src/reservoirs/ChocolateReservoir.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 404 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/reservoirs/ChocolateReservoir.o src/reservoirs/ChocolateReservoir.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 4272 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/reservoirs/CoffeReservoir.cpp to obj/default/src/reservoirs/CoffeReservoir.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 5836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/reservoirs/CoffeReservoir.o src/reservoirs/CoffeReservoir.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6416 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/reservoirs/MilkReservoir.cpp to obj/default/src/reservoirs/MilkReservoir.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 6412 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/reservoirs/MilkReservoir.o src/reservoirs/MilkReservoir.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5748 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/reservoirs/SugarReservoir.cpp to obj/default/src/reservoirs/SugarReservoir.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 1772 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/reservoirs/SugarReservoir.o src/reservoirs/SugarReservoir.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] true 4588 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7212 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 7700 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 4800 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7604 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4452 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      0 [main] echo 7968 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 1464 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4528 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 1152 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7632 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 2840 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6924 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7996 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 7468 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2704 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 1440 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7648 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3176 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 6836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7464 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7980 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 5416 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      1 [main] mkdir 2964 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6624 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Selector.cpp to obj/default/src/Selector.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 4108 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Selector.o src/Selector.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] true 3052 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 2320 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      0 [main] sh 7308 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 8000 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 4464 Bytes program size (code + initialized data).
+Info:               27 KBytes free for stack + heap.
+      1 [main] echo 5156 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 2924 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 8056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      1 [main] sh 3272 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5856 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5892 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      1 [main] pwd 2932 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 504 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 6792 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 6404 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 396 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 6416 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 7756 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] echo 6036 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+
+**** Build of configuration Nios II for project novoapp ****
 
 Error: Command canceled
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7208 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1104 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3868 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      0 [main] pwd 1528 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 8172 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2500 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      1 [main] echo 3220 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling hello_world_small.cpp to obj/default/hello_world_small.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 4308 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6704 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Controller.cpp to obj/default/src/Controller.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 3248 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Controller.o src/Controller.cpp
+the public mailing list cygwin@cygwin.com
+src/Controller.cpp: In member function 'bool Controller::needToResupply(coffeTypes, bool)':
+src/Controller.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+      0 [main] echo 2152 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Display.cpp to obj/default/src/Display.o
+the public mailing list cygwin@cygwin.com
+      1 [main] mkdir 8144 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Display.o src/Display.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 2832 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/Selector.cpp to obj/default/src/Selector.o
+the public mailing list cygwin@cygwin.com
+      1 [main] mkdir 7556 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/Selector.o src/Selector.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6404 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/reservoirs/ChocolateReservoir.cpp to obj/default/src/reservoirs/ChocolateReservoir.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 7140 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/reservoirs/ChocolateReservoir.o src/reservoirs/ChocolateReservoir.cpp
+      0 [main] echo 5456 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/reservoirs/CoffeReservoir.cpp to obj/default/src/reservoirs/CoffeReservoir.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 7124 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/reservoirs/CoffeReservoir.o src/reservoirs/CoffeReservoir.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 1828 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/reservoirs/MilkReservoir.cpp to obj/default/src/reservoirs/MilkReservoir.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 3056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/reservoirs/MilkReservoir.o src/reservoirs/MilkReservoir.cpp
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 7560 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling src/reservoirs/SugarReservoir.cpp to obj/default/src/reservoirs/SugarReservoir.o
+the public mailing list cygwin@cygwin.com
+      1 [main] mkdir 7872 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+nios2-elf-gcc -xc++ -MP -MMD -c -I../novoapp_bsp//HAL/inc -I../novoapp_bsp/ -I../novoapp_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED      -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/src/reservoirs/SugarReservoir.o src/reservoirs/SugarReservoir.cpp
+      0 [main] true 3220 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 5956 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking novoapp.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'../novoapp_bsp//linker.x' -msys-crt0='../novoapp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../novoapp_bsp/  -msmallc  -Wl,-Map=novoapp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o novoapp.elf obj/default/hello_world_small.o obj/default/src/Controller.o obj/default/src/Display.o obj/default/src/Selector.o obj/default/src/reservoirs/ChocolateReservoir.o obj/default/src/reservoirs/CoffeReservoir.o obj/default/src/reservoirs/MilkReservoir.o obj/default/src/reservoirs/SugarReservoir.o obj/default/src/reservoirs/WaterReservoir.o -lm 
+nios2-elf-insert novoapp.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11088 --timestamp 1478015793 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name CPU_NIOS --quartus_project_dir "C:/Projetos_Altera/Topicos_II/Caldeira" --jdi C:/altera_trn/Caldeira/Caldeira.jdi --sopcinfo C:/altera_trn/Caldeira/CPU_NIOS.sopcinfo
+      1 [main] sh 2456 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 3784 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 4500 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (novoapp.elf) 3992 Bytes program size (code + initialized data).
+Info:               28 KBytes free for stack + heap.
+      0 [main] echo 1528 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating novoapp.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source novoapp.elf >novoapp.objdump
+      0 [main] sh 7508 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+    401 [main] sh 8172 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project novoapp ****
+
+make all 
+      0 [main] sh 7908 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 1528 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 3056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building ../novoapp_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C ../novoapp_bsp/
+      1 [main] pwd 7716 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 8172 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 5068 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 5624 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7208 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[novoapp build complete]
 
 **** Build Finished ****

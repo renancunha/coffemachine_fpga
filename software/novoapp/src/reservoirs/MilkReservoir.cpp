@@ -2,7 +2,7 @@
 
 
 MilkReservoir::MilkReservoir(){
-
+	this->amount = 10;
 }
 
 void MilkReservoir::setAmount(int amount)

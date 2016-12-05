@@ -1,5 +1,3 @@
-#define CHECK_BIT(var,pos) ((var) & (1<<(pos)))
-
 #include "sys/alt_stdio.h"
 #include "system.h"
 #include "io.h"
@@ -15,6 +13,7 @@ public:
 	bool isReporPressed();
 
 	coffeTypes getSelectedCoffe();
+	int getCupSize();
 	bool isWithSugar();
 
 };

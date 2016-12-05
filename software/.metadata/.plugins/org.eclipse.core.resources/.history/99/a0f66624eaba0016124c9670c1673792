@@ -1,0 +1,16 @@
+#include "ChocolateReservoir.h"
+
+
+ChocolateReservoir::ChocolateReservoir(){
+	this->amount = 2;
+}
+
+void ChocolateReservoir::setAmount(int amount)
+{
+	this->amount = amount;
+}
+
+int ChocolateReservoir::getAmount()
+{
+	return this->amount;
+}

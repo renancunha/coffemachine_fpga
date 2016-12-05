@@ -8,7 +8,7 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="153" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
 <coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="89" y="22"/>
@@ -31,29 +31,75 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Controller.h" partName="Controller.h" path="C:/altera_trn/Caldeira/software/novoapp/src/Controller.h" title="Controller.h" tooltip="novoapp/src/Controller.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/novoapp/src/Controller.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="585" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ChocolateReservoir.cpp" partName="ChocolateReservoir.cpp" path="C:/Projetos_Altera/Topicos_II/Caldeira/software/novoapp/src/reservoirs/ChocolateReservoir.cpp" title="ChocolateReservoir.cpp" tooltip="novoapp/src/reservoirs/ChocolateReservoir.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/novoapp/src/reservoirs/ChocolateReservoir.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="98" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Selector.h" partName="Selector.h" path="C:/altera_trn/Caldeira/software/novoapp/src/Selector.h" title="Selector.h" tooltip="novoapp/src/Selector.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/novoapp/src/Selector.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="260" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="CoffeReservoir.cpp" partName="CoffeReservoir.cpp" path="C:/Projetos_Altera/Topicos_II/Caldeira/software/novoapp/src/reservoirs/CoffeReservoir.cpp" title="CoffeReservoir.cpp" tooltip="novoapp/src/reservoirs/CoffeReservoir.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/novoapp/src/reservoirs/CoffeReservoir.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="86" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MilkReservoir.cpp" partName="MilkReservoir.cpp" path="C:/Projetos_Altera/Topicos_II/Caldeira/software/novoapp/src/reservoirs/MilkReservoir.cpp" title="MilkReservoir.cpp" tooltip="novoapp/src/reservoirs/MilkReservoir.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/novoapp/src/reservoirs/MilkReservoir.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="83" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="SugarReservoir.cpp" partName="SugarReservoir.cpp" path="C:/Projetos_Altera/Topicos_II/Caldeira/software/novoapp/src/reservoirs/SugarReservoir.cpp" title="SugarReservoir.cpp" tooltip="novoapp/src/reservoirs/SugarReservoir.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/novoapp/src/reservoirs/SugarReservoir.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="65" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.debug.ui.MemoryView" partName="Memory">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="300" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.priorityField="30" org.eclipse.ui.ide.resourceField="90"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
-<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
+<view id="org.eclipse.debug.ui.RegisterView" partName="Registers">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (10 items)"/>
+<category IMemento.internal.id="Warnings (5 items)"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -67,12 +113,8 @@
 <viewState/>
 </view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List"/>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
-<viewState/>
-</view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.altera.sbtgui.ui.cPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="com.altera.sbtgui.ui.cPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -140,40 +182,55 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
-<view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1995c9a" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="1">&#x0A;<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1995c9a" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.7491749" ratioLeft="454" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<info folder="true" part="bottom" ratio="0.7491749" ratioLeft="454" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="Nios II Console"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="topRight" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
@@ -244,19 +301,22 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.7350565" ratioLeft="455" ratioRight="164" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.63974154" ratioLeft="396" ratioRight="223" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="Nios II Console"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:*" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.ui.typeHierarchy" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -271,170 +331,279 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.altera.sbtgui.ui.Nios2DebugPerspectiveFactory" id="com.altera.sbtgui.ui.debugPerspective" label="Nios II Debug"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView"/>
+<show_view_action id="org.eclipse.debug.ui.RegisterView"/>
+<show_view_action id="org.eclipse.debug.ui.MemoryView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.DisassemblyView"/>
+<new_wizard_action id="com.altera.sbtgui.ui.newSoftwareExample"/>
+<new_wizard_action id="com.altera.sbtgui.ui.newApplication"/>
+<new_wizard_action id="com.altera.sbtgui.ui.newBsp"/>
+<new_wizard_action id="com.altera.sbtgui.ui.newLibrary"/>
+<perspective_action id="com.altera.sbtgui.ui.cPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.debug.ui.ExpressionView"/>
+<view id="org.eclipse.debug.ui.RegisterView"/>
+<view id="org.eclipse.debug.ui.MemoryView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7491961" ratioLeft="466" ratioRight="156" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="Nios II Console"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:*" label="LabelNotFound"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.44849786" ratioLeft="209" ratioRight="257" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="Registers"/>
+<page content="org.eclipse.debug.ui.MemoryView" label="Memory"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/hello_world_small.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/Controller.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/Display.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/Display.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp_bsp/system.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/Selector.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/Selector.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/reservoirs/CoffeReservoir.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/Controller.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/hello_world_small.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/Display.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/Selector.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/reservoirs/CoffeReservoir.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/reservoirs/CoffeReservoir.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/reservoirs/ChocolateReservoir.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/reservoirs/MilkReservoir.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/reservoirs/SugarReservoir.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/reservoirs/WaterReservoir.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/Controller.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/reservoirs/ChocolateReservoir.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/reservoirs/CoffeReservoir.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/novoapp/src/reservoirs/SugarReservoir.cpp"/>
 </editors>
-<item historyLabel="hello_world_small.cpp" index="0">
-<position info="not_deleted" x="2" y="66"/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="20" y="0"/>
-</item>
-<item historyLabel="Controller.h" index="1">
-<position info="not_deleted" x="585" y="0"/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="20" y="0"/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="1251" y="15"/>
-</item>
-<item historyLabel="Display.h" index="2">
+<item historyLabel="CoffeReservoir.cpp" index="5">
 <position/>
 </item>
-<item historyLabel="hello_world_small.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="system.h" index="4">
-<position info="not_deleted" x="5554" y="9"/>
-</item>
-<item historyLabel="hello_world_small.cpp" index="0">
-<position info="not_deleted" x="30" y="19"/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="1251" y="15"/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="1603" y="0"/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="186" y="0"/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="153" y="1"/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="1197" y="0"/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="230" y="0"/>
-</item>
-<item historyLabel="Display.h" index="2">
-<position info="not_deleted" x="538" y="0"/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="230" y="0"/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="194" y="0"/>
-</item>
-<item historyLabel="Display.cpp" index="3">
-<position info="not_deleted" x="626" y="0"/>
-</item>
-<item historyLabel="hello_world_small.cpp" index="0">
-<position info="not_deleted" x="30" y="19"/>
-</item>
-<item historyLabel="Selector.cpp" index="5">
-<position info="not_deleted" x="542" y="0"/>
-</item>
-<item historyLabel="Selector.h" index="6">
-<position info="not_deleted" x="260" y="0"/>
-</item>
-<item historyLabel="Selector.cpp" index="5">
-<position info="not_deleted" x="353" y="0"/>
-</item>
-<item historyLabel="Selector.h" index="6">
-<position info="not_deleted" x="260" y="0"/>
-</item>
-<item historyLabel="Selector.cpp" index="5">
-<position info="not_deleted" x="353" y="0"/>
-</item>
-<item historyLabel="CoffeReservoir.h" index="7">
-<position info="not_deleted" x="63" y="9"/>
-</item>
-<item historyLabel="Selector.cpp" index="5">
-<position info="not_deleted" x="664" y="0"/>
-</item>
-<item historyLabel="Controller.cpp" index="8">
-<position info="not_deleted" x="1155" y="44"/>
-</item>
-<item historyLabel="Selector.cpp" index="5">
-<position info="not_deleted" x="507" y="0"/>
-</item>
-<item active="true" historyLabel="hello_world_small.cpp" index="9">
+<item historyLabel="CoffeReservoir.h" index="4">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="2189" y="0"/>
+</item>
+<item historyLabel="Controller.cpp" index="0">
+<position info="not_deleted" x="59" y="0"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="Selector.cpp" index="3">
+<position info="not_deleted" x="615" y="1"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="1782" y="0"/>
+</item>
+<item historyLabel="Controller.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="1784" y="0"/>
+</item>
+<item historyLabel="Controller.cpp" index="0">
+<position info="not_deleted" x="78" y="14"/>
+</item>
+<item historyLabel="Controller.cpp" index="0">
+<position info="not_deleted" x="705" y="0"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="Selector.cpp" index="3">
+<position info="not_deleted" x="202" y="2"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="Selector.cpp" index="3">
+<position info="not_deleted" x="151" y="14"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="2034" y="13"/>
+</item>
+<item historyLabel="Selector.cpp" index="3">
+<position info="not_deleted" x="185" y="10"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="2092" y="0"/>
+</item>
+<item historyLabel="ChocolateReservoir.cpp" index="6">
+<position info="not_deleted" x="97" y="0"/>
+</item>
+<item historyLabel="CoffeReservoir.cpp" index="5">
+<position info="not_deleted" x="85" y="0"/>
+</item>
+<item historyLabel="MilkReservoir.cpp" index="7">
+<position info="not_deleted" x="82" y="0"/>
+</item>
+<item historyLabel="SugarReservoir.cpp" index="8">
+<position info="not_deleted" x="85" y="0"/>
+</item>
+<item historyLabel="WaterReservoir.cpp" index="9">
+<position/>
+</item>
+<item historyLabel="Controller.cpp" index="0">
+<position info="not_deleted" x="705" y="0"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="1959" y="40"/>
+</item>
+<item historyLabel="Selector.cpp" index="3">
+<position info="not_deleted" x="203" y="0"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="1959" y="40"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="742" y="0"/>
+</item>
+<item historyLabel="Controller.cpp" index="0">
+<position info="not_deleted" x="2257" y="24"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="743" y="0"/>
+</item>
+<item historyLabel="Controller.cpp" index="0">
+<position info="not_deleted" x="2222" y="13"/>
+</item>
+<item historyLabel="Controller.h" index="10">
+<position info="not_deleted" x="728" y="13"/>
+</item>
+<item historyLabel="Controller.cpp" index="0">
+<position info="not_deleted" x="2272" y="0"/>
+</item>
+<item historyLabel="WaterReservoir.cpp" index="9">
+<position/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="814" y="0"/>
+</item>
+<item historyLabel="Display.cpp" index="2">
+<position info="not_deleted" x="1556" y="0"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="2467" y="0"/>
+</item>
+<item historyLabel="Selector.cpp" index="3">
+<position info="not_deleted" x="295" y="0"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="2467" y="0"/>
+</item>
+<item historyLabel="Display.cpp" index="2">
+<position info="not_deleted" x="600" y="0"/>
+</item>
+<item historyLabel="hello_world_small.cpp" index="1">
+<position info="not_deleted" x="2467" y="0"/>
+</item>
+<item historyLabel="Controller.cpp" index="0">
+<position info="not_deleted" x="192" y="0"/>
+</item>
+<item historyLabel="MilkReservoir.cpp" index="7">
+<position info="not_deleted" x="81" y="1"/>
+</item>
+<item historyLabel="WaterReservoir.cpp" index="9">
+<position/>
+</item>
+<item historyLabel="ChocolateReservoir.cpp" index="11">
+<position info="not_deleted" x="98" y="0"/>
+</item>
+<item historyLabel="CoffeReservoir.cpp" index="12">
+<position info="not_deleted" x="86" y="0"/>
+</item>
+<item historyLabel="MilkReservoir.cpp" index="7">
+<position info="not_deleted" x="83" y="0"/>
+</item>
+<item historyLabel="SugarReservoir.cpp" index="13">
+<position info="not_deleted" x="86" y="0"/>
+</item>
+<item historyLabel="WaterReservoir.cpp" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="SugarReservoir.cpp" index="13">
+<position info="not_deleted" x="86" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -454,41 +623,14 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Selector.h" tooltip="novoapp/src/Selector.h">
-<persistable path="/novoapp/src/Selector.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Display.h" tooltip="novoapp/src/Display.h">
-<persistable path="/novoapp/src/Display.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="novoapp_bsp/system.h">
-<persistable path="/novoapp_bsp/system.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MilkReservoir.cpp" tooltip="novoapp/src/reservoirs/MilkReservoir.cpp">
-<persistable path="/novoapp/src/reservoirs/MilkReservoir.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MilkReservoir.h" tooltip="novoapp/src/reservoirs/MilkReservoir.h">
-<persistable path="/novoapp/src/reservoirs/MilkReservoir.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Display.cpp" tooltip="novoapp/src/Display.cpp">
-<persistable path="/novoapp/src/Display.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Controller.h" tooltip="novoapp/src/Controller.h">
-<persistable path="/novoapp/src/Controller.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Defs.h" tooltip="novoapp/src/Defs.h">
-<persistable path="/novoapp/src/Defs.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Selector.cpp" tooltip="novoapp/src/Selector.cpp">
-<persistable path="/novoapp/src/Selector.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world_small.cpp" tooltip="novoapp/hello_world_small.cpp">
-<persistable path="/novoapp/hello_world_small.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CoffeReservoir.h" tooltip="novoapp/src/reservoirs/CoffeReservoir.h">
-<persistable path="/novoapp/src/reservoirs/CoffeReservoir.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WaterReservoir.cpp" tooltip="novoapp/src/reservoirs/WaterReservoir.cpp">
+<persistable path="/novoapp/src/reservoirs/WaterReservoir.cpp"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SugarReservoir.cpp" tooltip="novoapp/src/reservoirs/SugarReservoir.cpp">
 <persistable path="/novoapp/src/reservoirs/SugarReservoir.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MilkReservoir.cpp" tooltip="novoapp/src/reservoirs/MilkReservoir.cpp">
+<persistable path="/novoapp/src/reservoirs/MilkReservoir.cpp"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CoffeReservoir.cpp" tooltip="novoapp/src/reservoirs/CoffeReservoir.cpp">
 <persistable path="/novoapp/src/reservoirs/CoffeReservoir.cpp"/>
@@ -496,8 +638,35 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ChocolateReservoir.cpp" tooltip="novoapp/src/reservoirs/ChocolateReservoir.cpp">
 <persistable path="/novoapp/src/reservoirs/ChocolateReservoir.cpp"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Controller.h" tooltip="novoapp/src/Controller.h">
+<persistable path="/novoapp/src/Controller.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CoffeReservoir.h" tooltip="novoapp/src/reservoirs/CoffeReservoir.h">
+<persistable path="/novoapp/src/reservoirs/CoffeReservoir.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Defs.h" tooltip="novoapp/src/Defs.h">
+<persistable path="/novoapp/src/Defs.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Display.h" tooltip="novoapp/src/Display.h">
+<persistable path="/novoapp/src/Display.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SugarReservoir.h" tooltip="novoapp/src/reservoirs/SugarReservoir.h">
 <persistable path="/novoapp/src/reservoirs/SugarReservoir.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WaterReservoir.h" tooltip="novoapp/src/reservoirs/WaterReservoir.h">
+<persistable path="/novoapp/src/reservoirs/WaterReservoir.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Selector.cpp" tooltip="novoapp/src/Selector.cpp">
+<persistable path="/novoapp/src/Selector.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Selector.h" tooltip="novoapp/src/Selector.h">
+<persistable path="/novoapp/src/Selector.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Controller.cpp" tooltip="novoapp/src/Controller.cpp">
+<persistable path="/novoapp/src/Controller.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Display.cpp" tooltip="novoapp/src/Display.cpp">
+<persistable path="/novoapp/src/Display.cpp"/>
 </file>
 </mruList>
 </workbench>

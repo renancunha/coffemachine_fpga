@@ -2,7 +2,7 @@
 
 
 CoffeReservoir::CoffeReservoir(){
-
+	this->amount = 10;
 }
 
 void CoffeReservoir::setAmount(int amount)

@@ -8,42 +8,55 @@ Display::Display(){
 	this->_ledCoffeMilk = 0;
 	this->_ledMocacchino = 0;
 	this->_ledSugar = 0;
+	this->_ledWaterLevel = 0;
+	this->_ledWaterTemp = 0;
 }
 
 void Display::refreshLeds()
 {
+	int soma = 0;
 
 	if(this->_ledCopo)
 	{
-		this->_led_value += 1;
+		soma = soma + 1;
 	}
 
 	if(this->_ledRepor)
 	{
-		this->_led_value += 2;
+		soma = soma +  2;
 	}
 
 	if(this->_ledCoffe)
 	{
-		this->_led_value += 4;
+		soma = soma +  4;
 	}
 
 	if(this->_ledCoffeMilk)
 	{
-		this->_led_value += 8;
+		soma = soma +  8;
 	}
 
 	if(this->_ledMocacchino)
 	{
-		this->_led_value += 16;
+		soma = soma +  16;
 	}
 
 	if(this->_ledSugar)
 	{
-		this->_led_value += 32;
+		soma = soma + 32;
 	}
 
-	IOWR(LED_BASE,0, this->_led_value);
+	if(this->_ledWaterLevel)
+	{
+		soma = soma +  64;
+	}
+
+	if(this->_ledWaterTemp)
+	{
+		soma = soma +  128;
+	}
+
+	IOWR(LED_BASE,0, soma);
 }
 
 void Display::setLedRepor(int status)
@@ -82,6 +95,18 @@ void Display::setLedSugar(int status)
 	this->refreshLeds();
 }
 
+void Display::setLedWaterLevel(int status)
+{
+	this->_ledWaterLevel = status;
+	this->refreshLeds();
+}
+
+void Display::setLedWaterTemp(int status)
+{
+	this->_ledWaterTemp = status;
+	this->refreshLeds();
+}
+
 void Display::clearDisplays()
 {
 	IOWR(HEX0_BASE,0,127);
@@ -104,4 +129,14 @@ void Display::showWait()
 	IOWR(HEX1_BASE,0,121); 		// 1111001 --> i
 	IOWR(HEX2_BASE,0,8);   		// 0001000 --> a
 	IOWR(HEX3_BASE,0,99);	 	// 1100011 --> w
+}
+
+void Display::clearLeds()
+{
+	this->setLedCoffe(0);
+	this->setLedCoffeMilk(0);
+	this->setLedCopo(0);
+	this->setLedMocacchino(0);
+	this->setLedRepor(0);
+	this->setLedCoffe(0);
 }

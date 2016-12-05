@@ -4,6 +4,9 @@
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.738510919;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.738510919.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.1517454651;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.7007168">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="C:/Projetos_Altera/Topicos_II/Caldeira/software/novoapp_bsp/HAL/inc"/>
+<includePath path="C:/Projetos_Altera/Topicos_II/Caldeira/software/novoapp_bsp/"/>
+<includePath path="C:/Projetos_Altera/Topicos_II/Caldeira/software/novoapp_bsp/drivers/inc"/>
 <includePath path="C:/altera_trn/Caldeira/software/novoapp_bsp/HAL/inc"/>
 <includePath path="C:/altera_trn/Caldeira/software/novoapp_bsp/"/>
 <includePath path="C:/altera_trn/Caldeira/software/novoapp_bsp/drivers/inc"/>
@@ -232,6 +235,9 @@
 </instance>
 <instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.738510919;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.738510919.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.967766390;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1907046896">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="C:/Projetos_Altera/Topicos_II/Caldeira/software/novoapp_bsp/HAL/inc"/>
+<includePath path="C:/Projetos_Altera/Topicos_II/Caldeira/software/novoapp_bsp/"/>
+<includePath path="C:/Projetos_Altera/Topicos_II/Caldeira/software/novoapp_bsp/drivers/inc"/>
 <includePath path="C:/altera_trn/Caldeira/software/novoapp_bsp/HAL/inc"/>
 <includePath path="C:/altera_trn/Caldeira/software/novoapp_bsp/"/>
 <includePath path="C:/altera_trn/Caldeira/software/novoapp_bsp/drivers/inc"/>

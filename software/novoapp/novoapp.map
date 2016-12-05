@@ -4,8 +4,18 @@ Archive member included because of file (symbol)
                               ../novoapp_bsp//obj/HAL/src/crt0.o (alt_load)
 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
                               ../novoapp_bsp//obj/HAL/src/crt0.o (alt_main)
+../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
+                              obj/default/hello_world_small.o (alt_printf)
+../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
+                              ../novoapp_bsp/\libhal_bsp.a(alt_printf.o) (alt_putchar)
+../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
+                              obj/default/hello_world_small.o (usleep)
 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
                               ../novoapp_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o) (altera_avalon_jtag_uart_write)
+../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                              ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o) (alt_busy_sleep)
 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
                               ../novoapp_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
@@ -16,6 +26,8 @@ Archive member included because of file (symbol)
                               ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
                               ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o) (alt_icache_flush)
+c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+                              ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o) (__udivsi3)
 
 Memory Configuration
 
@@ -35,6 +47,7 @@ LOAD obj/default/src/reservoirs/ChocolateReservoir.o
 LOAD obj/default/src/reservoirs/CoffeReservoir.o
 LOAD obj/default/src/reservoirs/MilkReservoir.o
 LOAD obj/default/src/reservoirs/SugarReservoir.o
+LOAD obj/default/src/reservoirs/WaterReservoir.o
 LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libstdc++.a
 LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libm.a
 LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
@@ -80,7 +93,7 @@ LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7
                 0x00008020                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
                 0x00008020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
 
-.text           0x00008020      0x7c8
+.text           0x00008020      0xeb8
                 0x00008020                PROVIDE (stext, ABSOLUTE (.))
  *(.interp)
  *(.hash)
@@ -128,199 +141,241 @@ LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7
  .text          0x00008020       0x4c ../novoapp_bsp//obj/HAL/src/crt0.o
                 0x00008020                _start
  .text          0x0000806c        0x0 obj/default/hello_world_small.o
- .text.startup  0x0000806c      0x14c obj/default/hello_world_small.o
+ .text.startup  0x0000806c      0x288 obj/default/hello_world_small.o
                 0x0000806c                main
- .text          0x000081b8      0x1dc obj/default/src/Controller.o
-                0x000081b8                Controller::Controller()
-                0x000081b8                Controller::Controller()
-                0x000081f0                Controller::needToResupply(coffeTypes, bool)
-                0x000082c0                Controller::refill(coffeTypes, bool)
-                0x00008390                Controller::make(coffeTypes, bool)
- .text          0x00008394      0x174 obj/default/src/Display.o
-                0x00008394                Display::Display()
-                0x00008394                Display::Display()
-                0x000083b0                Display::refreshLeds()
-                0x0000843c                Display::setLedRepor(int)
-                0x00008444                Display::setLedCopo(int)
-                0x0000844c                Display::setLedCoffe(int)
-                0x00008454                Display::setLedCoffeMilk(int)
-                0x0000845c                Display::setLedMocacchino(int)
-                0x00008464                Display::setLedSugar(int)
-                0x0000846c                Display::clearDisplays()
-                0x00008498                Display::showDone()
-                0x000084d0                Display::showWait()
- .text          0x00008508       0x88 obj/default/src/Selector.o
-                0x00008508                Selector::Selector()
-                0x00008508                Selector::Selector()
-                0x0000850c                Selector::isPrepararPressed()
-                0x00008520                Selector::isReporPressed()
-                0x00008534                Selector::getSelectedCoffe()
-                0x00008578                Selector::isWithSugar()
- .text          0x00008590       0x14 obj/default/src/reservoirs/ChocolateReservoir.o
-                0x00008590                ChocolateReservoir::ChocolateReservoir()
-                0x00008590                ChocolateReservoir::ChocolateReservoir()
-                0x00008594                ChocolateReservoir::setAmount(int)
-                0x0000859c                ChocolateReservoir::getAmount()
- .text          0x000085a4       0x14 obj/default/src/reservoirs/CoffeReservoir.o
-                0x000085a4                CoffeReservoir::CoffeReservoir()
-                0x000085a4                CoffeReservoir::CoffeReservoir()
-                0x000085a8                CoffeReservoir::setAmount(int)
-                0x000085b0                CoffeReservoir::getAmount()
- .text          0x000085b8       0x14 obj/default/src/reservoirs/MilkReservoir.o
-                0x000085b8                MilkReservoir::MilkReservoir()
-                0x000085b8                MilkReservoir::MilkReservoir()
-                0x000085bc                MilkReservoir::setAmount(int)
-                0x000085c4                MilkReservoir::getAmount()
- .text          0x000085cc       0x14 obj/default/src/reservoirs/SugarReservoir.o
-                0x000085cc                SugarReservoir::SugarReservoir()
-                0x000085cc                SugarReservoir::SugarReservoir()
-                0x000085d0                SugarReservoir::setAmount(int)
-                0x000085d8                SugarReservoir::getAmount()
- .text          0x000085e0      0x104 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
-                0x000085e0                alt_load
- .text          0x000086e4       0x30 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
-                0x000086e4                alt_main
- .text          0x00008714       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
-                0x00008714                alt_irq_init
-                0x00008734                alt_sys_init
- .text          0x00008738       0x18 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
-                0x00008738                alt_dcache_flush_all
- .text          0x00008750       0x48 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
-                0x00008750                _do_ctors
- .text          0x00008798        0xc ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
-                0x00008798                alt_icache_flush_all
- .text          0x000087a4        0x8 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
-                0x000087a4                altera_nios2_qsys_irq_init
- .text          0x000087ac       0x38 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
-                0x000087ac                alt_icache_flush
+ .text          0x000082f4      0x33c obj/default/src/Controller.o
+                0x000082f4                Controller::Controller()
+                0x000082f4                Controller::Controller()
+                0x00008334                Controller::needToResupply(coffeTypes, bool)
+                0x00008400                Controller::refill(coffeTypes, bool)
+                0x000084d0                Controller::make(coffeTypes, bool, bool)
+                0x00008620                Controller::getWaterLevel()
+                0x00008628                Controller::getWaterTemp()
+ .text          0x00008630      0x1cc obj/default/src/Display.o
+                0x00008630                Display::Display()
+                0x00008630                Display::Display()
+                0x00008654                Display::refreshLeds()
+                0x000086c0                Display::setLedRepor(int)
+                0x000086c8                Display::setLedCopo(int)
+                0x000086d0                Display::setLedCoffe(int)
+                0x000086d8                Display::setLedCoffeMilk(int)
+                0x000086e0                Display::setLedMocacchino(int)
+                0x000086e8                Display::setLedSugar(int)
+                0x000086f0                Display::setLedWaterLevel(int)
+                0x000086f8                Display::setLedWaterTemp(int)
+                0x00008700                Display::clearDisplays()
+                0x0000872c                Display::showDone()
+                0x00008764                Display::showWait()
+                0x0000879c                Display::clearLeds()
+ .text          0x000087fc       0x9c obj/default/src/Selector.o
+                0x000087fc                Selector::Selector()
+                0x000087fc                Selector::Selector()
+                0x00008800                Selector::isPrepararPressed()
+                0x00008814                Selector::isReporPressed()
+                0x00008828                Selector::getSelectedCoffe()
+                0x0000886c                Selector::isWithSugar()
+                0x00008884                Selector::getCupSize()
+ .text          0x00008898       0x1c obj/default/src/reservoirs/ChocolateReservoir.o
+                0x00008898                ChocolateReservoir::ChocolateReservoir()
+                0x00008898                ChocolateReservoir::ChocolateReservoir()
+                0x000088a4                ChocolateReservoir::setAmount(int)
+                0x000088ac                ChocolateReservoir::getAmount()
+ .text          0x000088b4       0x1c obj/default/src/reservoirs/CoffeReservoir.o
+                0x000088b4                CoffeReservoir::CoffeReservoir()
+                0x000088b4                CoffeReservoir::CoffeReservoir()
+                0x000088c0                CoffeReservoir::setAmount(int)
+                0x000088c8                CoffeReservoir::getAmount()
+ .text          0x000088d0       0x1c obj/default/src/reservoirs/MilkReservoir.o
+                0x000088d0                MilkReservoir::MilkReservoir()
+                0x000088d0                MilkReservoir::MilkReservoir()
+                0x000088dc                MilkReservoir::setAmount(int)
+                0x000088e4                MilkReservoir::getAmount()
+ .text          0x000088ec       0x1c obj/default/src/reservoirs/SugarReservoir.o
+                0x000088ec                SugarReservoir::SugarReservoir()
+                0x000088ec                SugarReservoir::SugarReservoir()
+                0x000088f8                SugarReservoir::setAmount(int)
+                0x00008900                SugarReservoir::getAmount()
+ .text          0x00008908       0x2c obj/default/src/reservoirs/WaterReservoir.o
+                0x00008908                WaterReservoir::WaterReservoir()
+                0x00008908                WaterReservoir::WaterReservoir()
+                0x0000890c                WaterReservoir::getLevel()
+                0x00008920                WaterReservoir::getTemp()
+ .text          0x00008934      0x104 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
+                0x00008934                alt_load
+ .text          0x00008a38       0x30 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+                0x00008a38                alt_main
+ .text          0x00008a68      0x170 ../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
+                0x00008a68                alt_printf
+ .text          0x00008bd8       0x4c ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
+                0x00008bd8                alt_putchar
+ .text          0x00008c24        0x4 ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
+                0x00008c24                usleep
+ .text          0x00008c28       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00008c28                alt_irq_init
+                0x00008c48                alt_sys_init
+ .text          0x00008c4c       0x34 ../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x00008c4c                altera_avalon_jtag_uart_write
+ .text          0x00008c80       0x78 ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                0x00008c80                alt_busy_sleep
+ .text          0x00008cf8       0x18 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00008cf8                alt_dcache_flush_all
+ .text          0x00008d10       0x48 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                0x00008d10                _do_ctors
+ .text          0x00008d58        0xc ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00008d58                alt_icache_flush_all
+ .text          0x00008d64        0x8 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x00008d64                altera_nios2_qsys_irq_init
+ .text          0x00008d6c       0x38 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x00008d6c                alt_icache_flush
+ .text          0x00008da4      0x130 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+                0x00008e18                __divsi3
+                0x00008e68                __modsi3
+                0x00008ec4                __udivsi3
+                0x00008ecc                __umodsi3
  *(.gnu.warning.*)
  *(.fini)
-                0x000087e4                PROVIDE (__etext, ABSOLUTE (.))
-                0x000087e4                PROVIDE (_etext, ABSOLUTE (.))
-                0x000087e4                PROVIDE (etext, ABSOLUTE (.))
+                0x00008ed4                PROVIDE (__etext, ABSOLUTE (.))
+                0x00008ed4                PROVIDE (_etext, ABSOLUTE (.))
+                0x00008ed4                PROVIDE (etext, ABSOLUTE (.))
  *(.eh_frame_hdr)
-                0x000087e4                . = ALIGN (0x4)
-                0x000087e4                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+                0x00008ed4                . = ALIGN (0x4)
+                0x00008ed4                PROVIDE (__preinit_array_start, ABSOLUTE (.))
  *(.preinit_array)
-                0x000087e4                PROVIDE (__preinit_array_end, ABSOLUTE (.))
-                0x000087e4                PROVIDE (__init_array_start, ABSOLUTE (.))
+                0x00008ed4                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x00008ed4                PROVIDE (__init_array_start, ABSOLUTE (.))
  *(.init_array)
-                0x000087e4                PROVIDE (__init_array_end, ABSOLUTE (.))
-                0x000087e4                PROVIDE (__fini_array_start, ABSOLUTE (.))
+                0x00008ed4                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x00008ed4                PROVIDE (__fini_array_start, ABSOLUTE (.))
  *(.fini_array)
-                0x000087e4                PROVIDE (__fini_array_end, ABSOLUTE (.))
+                0x00008ed4                PROVIDE (__fini_array_end, ABSOLUTE (.))
  *(.eh_frame)
  *(.gcc_except_table .gcc_except_table.*)
  *(.dynamic)
-                0x000087e4                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+                0x00008ed4                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
  *(.ctors)
- .ctors         0x000087e4        0x4 obj/default/hello_world_small.o
+ .ctors         0x00008ed4        0x4 obj/default/hello_world_small.o
  *(SORT(.ctors.*))
-                0x000087e8                PROVIDE (__CTOR_END__, ABSOLUTE (.))
-                0x000087e8                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+                0x00008ed8                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x00008ed8                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
  *(.dtors)
  *(SORT(.dtors.*))
-                0x000087e8                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+                0x00008ed8                PROVIDE (__DTOR_END__, ABSOLUTE (.))
  *(.jcr)
-                0x000087e8                . = ALIGN (0x4)
+                0x00008ed8                . = ALIGN (0x4)
 
-.rodata         0x000087e8        0x0
-                0x000087e8                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
-                0x000087e8                . = ALIGN (0x4)
+.rodata         0x00008ed8       0x70
+                0x00008ed8                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x00008ed8                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00008ed8       0x70 obj/default/hello_world_small.o
  *(.rodata1)
-                0x000087e8                . = ALIGN (0x4)
-                0x000087e8                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
-                0x000087e8                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+                0x00008f48                . = ALIGN (0x4)
+                0x00008f48                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x00008ed8                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
 
-.rwdata         0x000087e8        0x4 load address 0x000087ec
-                0x000087e8                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
-                0x000087e8                . = ALIGN (0x4)
+.rwdata         0x00008f48        0x4 load address 0x00008f4c
+                0x00008f48                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00008f48                . = ALIGN (0x4)
  *(.got.plt)
  *(.got)
  *(.data1)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x000087e8        0x0 ../novoapp_bsp//obj/HAL/src/crt0.o
- .data          0x000087e8        0x0 obj/default/hello_world_small.o
- .data          0x000087e8        0x0 obj/default/src/Controller.o
- .data          0x000087e8        0x0 obj/default/src/Display.o
- .data          0x000087e8        0x0 obj/default/src/Selector.o
- .data          0x000087e8        0x0 obj/default/src/reservoirs/ChocolateReservoir.o
- .data          0x000087e8        0x0 obj/default/src/reservoirs/CoffeReservoir.o
- .data          0x000087e8        0x0 obj/default/src/reservoirs/MilkReservoir.o
- .data          0x000087e8        0x0 obj/default/src/reservoirs/SugarReservoir.o
- .data          0x000087e8        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
- .data          0x000087e8        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
- .data          0x000087e8        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
- .data          0x000087e8        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .data          0x000087e8        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .data          0x000087e8        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .data          0x000087e8        0x0 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
- .data          0x000087e8        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
-                0x000107e8                _gp = ABSOLUTE ((. + 0x8000))
-                0x000107e8                PROVIDE (gp, _gp)
+ .data          0x00008f48        0x0 ../novoapp_bsp//obj/HAL/src/crt0.o
+ .data          0x00008f48        0x0 obj/default/hello_world_small.o
+ .data          0x00008f48        0x0 obj/default/src/Controller.o
+ .data          0x00008f48        0x0 obj/default/src/Display.o
+ .data          0x00008f48        0x0 obj/default/src/Selector.o
+ .data          0x00008f48        0x0 obj/default/src/reservoirs/ChocolateReservoir.o
+ .data          0x00008f48        0x0 obj/default/src/reservoirs/CoffeReservoir.o
+ .data          0x00008f48        0x0 obj/default/src/reservoirs/MilkReservoir.o
+ .data          0x00008f48        0x0 obj/default/src/reservoirs/SugarReservoir.o
+ .data          0x00008f48        0x0 obj/default/src/reservoirs/WaterReservoir.o
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x00008f48        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .data          0x00008f48        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+                0x00010f48                _gp = ABSOLUTE ((. + 0x8000))
+                0x00010f48                PROVIDE (gp, _gp)
  *(.rwdata .rwdata.*)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
- .sdata         0x000087e8        0x4 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
-                0x000087e8                jtag_uart
+ .sdata         0x00008f48        0x4 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00008f48                jtag_uart
  *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
-                0x000087ec                . = ALIGN (0x4)
-                0x000087ec                _edata = ABSOLUTE (.)
-                0x000087ec                PROVIDE (edata, ABSOLUTE (.))
-                0x000087ec                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
-                0x000087ec                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+                0x00008f4c                . = ALIGN (0x4)
+                0x00008f4c                _edata = ABSOLUTE (.)
+                0x00008f4c                PROVIDE (edata, ABSOLUTE (.))
+                0x00008f4c                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x00008f4c                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
 
-.bss            0x000087f0       0x40
-                0x000087f0                __bss_start = ABSOLUTE (.)
-                0x000087f0                PROVIDE (__sbss_start, ABSOLUTE (.))
-                0x000087f0                PROVIDE (___sbss_start, ABSOLUTE (.))
+.bss            0x00008f50       0x4c
+                0x00008f50                __bss_start = ABSOLUTE (.)
+                0x00008f50                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x00008f50                PROVIDE (___sbss_start, ABSOLUTE (.))
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss          0x000087f0        0x8 obj/default/hello_world_small.o
-                0x000087f0                state
-                0x000087f4                selector
- .sbss          0x000087f8        0xc ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
-                0x000087f8                alt_envp
-                0x000087fc                alt_argv
-                0x00008800                alt_argc
+ .sbss          0x00008f50        0x8 obj/default/hello_world_small.o
+                0x00008f50                state
+                0x00008f54                selector
+ .sbss          0x00008f58        0xc ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+                0x00008f58                alt_envp
+                0x00008f5c                alt_argv
+                0x00008f60                alt_argc
  *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
  *(.scommon)
-                0x00008804                PROVIDE (__sbss_end, ABSOLUTE (.))
-                0x00008804                PROVIDE (___sbss_end, ABSOLUTE (.))
+                0x00008f64                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00008f64                PROVIDE (___sbss_end, ABSOLUTE (.))
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x00008804        0x0 ../novoapp_bsp//obj/HAL/src/crt0.o
- .bss           0x00008804       0x2c obj/default/hello_world_small.o
-                0x00008804                display
-                0x00008820                controller
- .bss           0x00008830        0x0 obj/default/src/Controller.o
- .bss           0x00008830        0x0 obj/default/src/Display.o
- .bss           0x00008830        0x0 obj/default/src/Selector.o
- .bss           0x00008830        0x0 obj/default/src/reservoirs/ChocolateReservoir.o
- .bss           0x00008830        0x0 obj/default/src/reservoirs/CoffeReservoir.o
- .bss           0x00008830        0x0 obj/default/src/reservoirs/MilkReservoir.o
- .bss           0x00008830        0x0 obj/default/src/reservoirs/SugarReservoir.o
- .bss           0x00008830        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
- .bss           0x00008830        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
- .bss           0x00008830        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
- .bss           0x00008830        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .bss           0x00008830        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .bss           0x00008830        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .bss           0x00008830        0x0 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
- .bss           0x00008830        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x00008f64        0x0 ../novoapp_bsp//obj/HAL/src/crt0.o
+ .bss           0x00008f64       0x38 obj/default/hello_world_small.o
+                0x00008f64                display
+                0x00008f88                controller
+ .bss           0x00008f9c        0x0 obj/default/src/Controller.o
+ .bss           0x00008f9c        0x0 obj/default/src/Display.o
+ .bss           0x00008f9c        0x0 obj/default/src/Selector.o
+ .bss           0x00008f9c        0x0 obj/default/src/reservoirs/ChocolateReservoir.o
+ .bss           0x00008f9c        0x0 obj/default/src/reservoirs/CoffeReservoir.o
+ .bss           0x00008f9c        0x0 obj/default/src/reservoirs/MilkReservoir.o
+ .bss           0x00008f9c        0x0 obj/default/src/reservoirs/SugarReservoir.o
+ .bss           0x00008f9c        0x0 obj/default/src/reservoirs/WaterReservoir.o
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x00008f9c        0x0 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x00008f9c        0x0 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
  *(COMMON)
-                0x00008830                . = ALIGN (0x4)
-                0x00008830                __bss_end = ABSOLUTE (.)
+                0x00008f9c                . = ALIGN (0x4)
+                0x00008f9c                __bss_end = ABSOLUTE (.)
 
-.onchip_memory  0x00008830        0x0
-                0x00008830                PROVIDE (_alt_partition_onchip_memory_start, ABSOLUTE (.))
+.onchip_memory  0x00008f9c        0x0
+                0x00008f9c                PROVIDE (_alt_partition_onchip_memory_start, ABSOLUTE (.))
  *(.onchip_memory .onchip_memory. onchip_memory.*)
-                0x00008830                . = ALIGN (0x4)
-                0x00008830                PROVIDE (_alt_partition_onchip_memory_end, ABSOLUTE (.))
-                0x00008830                _end = ABSOLUTE (.)
-                0x00008830                end = ABSOLUTE (.)
-                0x00008830                __alt_stack_base = ABSOLUTE (.)
-                0x00008830                PROVIDE (_alt_partition_onchip_memory_load_addr, LOADADDR (.onchip_memory))
+                0x00008f9c                . = ALIGN (0x4)
+                0x00008f9c                PROVIDE (_alt_partition_onchip_memory_end, ABSOLUTE (.))
+                0x00008f9c                _end = ABSOLUTE (.)
+                0x00008f9c                end = ABSOLUTE (.)
+                0x00008f9c                __alt_stack_base = ABSOLUTE (.)
+                0x00008f9c                PROVIDE (_alt_partition_onchip_memory_load_addr, LOADADDR (.onchip_memory))
 
 .stab
  *(.stab)
@@ -351,14 +406,21 @@ LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7
  .comment       0x00000000       0x24 obj/default/src/reservoirs/CoffeReservoir.o
  .comment       0x00000000       0x24 obj/default/src/reservoirs/MilkReservoir.o
  .comment       0x00000000       0x24 obj/default/src/reservoirs/SugarReservoir.o
+ .comment       0x00000000       0x24 obj/default/src/reservoirs/WaterReservoir.o
  .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
  .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
+ .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
+ .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
  .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
  .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
  .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
  .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
  .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
  .comment       0x00000000       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .comment       0x00000000       0x24 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
 
 .debug
  *(.debug)
@@ -372,7 +434,7 @@ LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x230
+.debug_aranges  0x00000000      0x310
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x28 ../novoapp_bsp//obj/HAL/src/crt0.o
@@ -393,151 +455,214 @@ LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7
  .debug_aranges
                 0x00000110       0x20 obj/default/src/reservoirs/SugarReservoir.o
  .debug_aranges
-                0x00000130       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
+                0x00000130       0x20 obj/default/src/reservoirs/WaterReservoir.o
  .debug_aranges
-                0x00000150       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000150       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
  .debug_aranges
-                0x00000170       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00000170       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
  .debug_aranges
-                0x00000190       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00000190       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
  .debug_aranges
-                0x000001b0       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                0x000001b0       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
  .debug_aranges
-                0x000001d0       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x000001d0       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
  .debug_aranges
-                0x000001f0       0x20 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x000001f0       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
  .debug_aranges
-                0x00000210       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x00000210       0x20 ../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x00000230       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_aranges
+                0x00000250       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000270       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_aranges
+                0x00000290       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x000002b0       0x20 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x000002d0       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_aranges
+                0x000002f0       0x20 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x227d
+.debug_info     0x00000000     0x374b
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000       0x60 ../novoapp_bsp//obj/HAL/src/crt0.o
- .debug_info    0x00000060      0x7df obj/default/hello_world_small.o
- .debug_info    0x0000083f      0x5aa obj/default/src/Controller.o
- .debug_info    0x00000de9      0x4d9 obj/default/src/Display.o
- .debug_info    0x000012c2      0x260 obj/default/src/Selector.o
- .debug_info    0x00001522      0x141 obj/default/src/reservoirs/ChocolateReservoir.o
- .debug_info    0x00001663      0x141 obj/default/src/reservoirs/CoffeReservoir.o
- .debug_info    0x000017a4      0x141 obj/default/src/reservoirs/MilkReservoir.o
- .debug_info    0x000018e5      0x141 obj/default/src/reservoirs/SugarReservoir.o
- .debug_info    0x00001a26      0x1b5 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
- .debug_info    0x00001bdb      0x1a7 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
- .debug_info    0x00001d82      0x193 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_info    0x00001f15       0xa3 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_info    0x00001fb8       0x8e ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .debug_info    0x00002046       0xcd ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_info    0x00002113       0x8f ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
- .debug_info    0x000021a2       0xdb ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x00000000       0x70 ../novoapp_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x00000070      0xc0b obj/default/hello_world_small.o
+ .debug_info    0x00000c7b      0x8ac obj/default/src/Controller.o
+ .debug_info    0x00001527      0x7ec obj/default/src/Display.o
+ .debug_info    0x00001d13      0x2c2 obj/default/src/Selector.o
+ .debug_info    0x00001fd5      0x141 obj/default/src/reservoirs/ChocolateReservoir.o
+ .debug_info    0x00002116      0x141 obj/default/src/reservoirs/CoffeReservoir.o
+ .debug_info    0x00002257      0x141 obj/default/src/reservoirs/MilkReservoir.o
+ .debug_info    0x00002398      0x141 obj/default/src/reservoirs/SugarReservoir.o
+ .debug_info    0x000024d9      0x19a obj/default/src/reservoirs/WaterReservoir.o
+ .debug_info    0x00002673      0x1b5 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00002828      0x1a7 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x000029cf      0x163 ../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_info    0x00002b32      0x148 ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_info    0x00002c7a       0xd7 ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_info    0x00002d51      0x193 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00002ee4      0x1a0 ../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x00003084       0xd6 ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_info    0x0000315a       0xa3 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x000031fd       0x8e ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_info    0x0000328b       0xcd ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00003358       0x8f ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x000033e7       0xdb ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x000034c2      0x289 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
 
-.debug_abbrev   0x00000000     0x1056
+.debug_abbrev   0x00000000     0x16e9
  *(.debug_abbrev)
  .debug_abbrev  0x00000000       0x12 ../novoapp_bsp//obj/HAL/src/crt0.o
- .debug_abbrev  0x00000012      0x1d9 obj/default/hello_world_small.o
- .debug_abbrev  0x000001eb      0x1ef obj/default/src/Controller.o
- .debug_abbrev  0x000003da      0x161 obj/default/src/Display.o
- .debug_abbrev  0x0000053b      0x15e obj/default/src/Selector.o
- .debug_abbrev  0x00000699      0x122 obj/default/src/reservoirs/ChocolateReservoir.o
- .debug_abbrev  0x000007bb      0x122 obj/default/src/reservoirs/CoffeReservoir.o
- .debug_abbrev  0x000008dd      0x122 obj/default/src/reservoirs/MilkReservoir.o
- .debug_abbrev  0x000009ff      0x122 obj/default/src/reservoirs/SugarReservoir.o
- .debug_abbrev  0x00000b21       0xd6 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
- .debug_abbrev  0x00000bf7      0x120 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
- .debug_abbrev  0x00000d17      0x105 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_abbrev  0x00000e1c       0x5a ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_abbrev  0x00000e76       0x79 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .debug_abbrev  0x00000eef       0x8a ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_abbrev  0x00000f79       0x42 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
- .debug_abbrev  0x00000fbb       0x9b ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x00000012      0x207 obj/default/hello_world_small.o
+ .debug_abbrev  0x00000219      0x220 obj/default/src/Controller.o
+ .debug_abbrev  0x00000439      0x1d2 obj/default/src/Display.o
+ .debug_abbrev  0x0000060b      0x148 obj/default/src/Selector.o
+ .debug_abbrev  0x00000753      0x122 obj/default/src/reservoirs/ChocolateReservoir.o
+ .debug_abbrev  0x00000875      0x122 obj/default/src/reservoirs/CoffeReservoir.o
+ .debug_abbrev  0x00000997      0x122 obj/default/src/reservoirs/MilkReservoir.o
+ .debug_abbrev  0x00000ab9      0x122 obj/default/src/reservoirs/SugarReservoir.o
+ .debug_abbrev  0x00000bdb      0x12f obj/default/src/reservoirs/WaterReservoir.o
+ .debug_abbrev  0x00000d0a       0xd6 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000de0      0x120 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000f00       0xcc ../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_abbrev  0x00000fcc       0xd4 ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_abbrev  0x000010a0       0x96 ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_abbrev  0x00001136      0x105 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000123b       0xd5 ../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x00001310       0x8d ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_abbrev  0x0000139d       0x5a ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x000013f7       0x79 ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_abbrev  0x00001470       0x8a ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x000014fa       0x42 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x0000153c       0x9b ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x000015d7      0x112 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
 
-.debug_line     0x00000000      0xa25
+.debug_line     0x00000000     0x1157
  *(.debug_line)
  .debug_line    0x00000000       0x72 ../novoapp_bsp//obj/HAL/src/crt0.o
- .debug_line    0x00000072      0x118 obj/default/hello_world_small.o
- .debug_line    0x0000018a      0x117 obj/default/src/Controller.o
- .debug_line    0x000002a1       0xad obj/default/src/Display.o
- .debug_line    0x0000034e       0x93 obj/default/src/Selector.o
- .debug_line    0x000003e1       0x6f obj/default/src/reservoirs/ChocolateReservoir.o
- .debug_line    0x00000450       0x67 obj/default/src/reservoirs/CoffeReservoir.o
- .debug_line    0x000004b7       0x65 obj/default/src/reservoirs/MilkReservoir.o
- .debug_line    0x0000051c       0x67 obj/default/src/reservoirs/SugarReservoir.o
- .debug_line    0x00000583       0xd6 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
- .debug_line    0x00000659       0xc0 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
- .debug_line    0x00000719      0x101 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_line    0x0000081a       0x5a ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_line    0x00000874       0x5d ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .debug_line    0x000008d1       0x87 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_line    0x00000958       0x50 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
- .debug_line    0x000009a8       0x7d ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x00000072      0x1fb obj/default/hello_world_small.o
+ .debug_line    0x0000026d      0x1d7 obj/default/src/Controller.o
+ .debug_line    0x00000444       0xe3 obj/default/src/Display.o
+ .debug_line    0x00000527       0x96 obj/default/src/Selector.o
+ .debug_line    0x000005bd       0x70 obj/default/src/reservoirs/ChocolateReservoir.o
+ .debug_line    0x0000062d       0x68 obj/default/src/reservoirs/CoffeReservoir.o
+ .debug_line    0x00000695       0x66 obj/default/src/reservoirs/MilkReservoir.o
+ .debug_line    0x000006fb       0x68 obj/default/src/reservoirs/SugarReservoir.o
+ .debug_line    0x00000763       0x90 obj/default/src/reservoirs/WaterReservoir.o
+ .debug_line    0x000007f3       0xd6 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x000008c9       0xc0 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000989      0x120 ../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_line    0x00000aa9       0x4d ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_line    0x00000af6       0xf0 ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_line    0x00000be6      0x101 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00000ce7       0xf5 ../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x00000ddc       0x9d ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_line    0x00000e79       0x5a ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00000ed3       0x5d ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_line    0x00000f30       0x87 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00000fb7       0x50 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x00001007       0x7d ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x00001084       0xd3 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
 
-.debug_frame    0x00000000      0x40c
+.debug_frame    0x00000000      0x600
  *(.debug_frame)
  .debug_frame   0x00000000       0x48 obj/default/hello_world_small.o
- .debug_frame   0x00000048       0x70 obj/default/src/Controller.o
- .debug_frame   0x000000b8       0xc0 obj/default/src/Display.o
- .debug_frame   0x00000178       0x60 obj/default/src/Selector.o
- .debug_frame   0x000001d8       0x40 obj/default/src/reservoirs/ChocolateReservoir.o
- .debug_frame   0x00000218       0x40 obj/default/src/reservoirs/CoffeReservoir.o
- .debug_frame   0x00000258       0x40 obj/default/src/reservoirs/MilkReservoir.o
- .debug_frame   0x00000298       0x40 obj/default/src/reservoirs/SugarReservoir.o
- .debug_frame   0x000002d8       0x28 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
- .debug_frame   0x00000300       0x28 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
- .debug_frame   0x00000328       0x38 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_frame   0x00000360       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_frame   0x00000380       0x2c ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .debug_frame   0x000003ac       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_frame   0x000003cc       0x20 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
- .debug_frame   0x000003ec       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_frame   0x00000048       0xa0 obj/default/src/Controller.o
+ .debug_frame   0x000000e8       0xf8 obj/default/src/Display.o
+ .debug_frame   0x000001e0       0x70 obj/default/src/Selector.o
+ .debug_frame   0x00000250       0x40 obj/default/src/reservoirs/ChocolateReservoir.o
+ .debug_frame   0x00000290       0x40 obj/default/src/reservoirs/CoffeReservoir.o
+ .debug_frame   0x000002d0       0x40 obj/default/src/reservoirs/MilkReservoir.o
+ .debug_frame   0x00000310       0x40 obj/default/src/reservoirs/SugarReservoir.o
+ .debug_frame   0x00000350       0x40 obj/default/src/reservoirs/WaterReservoir.o
+ .debug_frame   0x00000390       0x28 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x000003b8       0x28 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000003e0       0x38 ../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_frame   0x00000418       0x2c ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_frame   0x00000444       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_frame   0x00000464       0x38 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x0000049c       0x20 ../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x000004bc       0x28 ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_frame   0x000004e4       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000504       0x2c ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_frame   0x00000530       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00000550       0x20 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x00000570       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_frame   0x00000590       0x70 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
 
-.debug_str      0x00000000      0xb6e
+.debug_str      0x00000000      0xfbf
  *(.debug_str)
- .debug_str     0x00000000      0x682 obj/default/hello_world_small.o
-                                0x6d1 (size before relaxing)
- .debug_str     0x00000682       0x36 obj/default/src/Controller.o
-                                0x2f8 (size before relaxing)
- .debug_str     0x000006b8       0x2e obj/default/src/Display.o
-                                0x2c3 (size before relaxing)
- .debug_str     0x000006e6       0x2d obj/default/src/Selector.o
-                                0x1f0 (size before relaxing)
- .debug_str     0x00000713       0x42 obj/default/src/reservoirs/ChocolateReservoir.o
-                                 0xf3 (size before relaxing)
- .debug_str     0x00000755       0x3a obj/default/src/reservoirs/CoffeReservoir.o
-                                 0xdf (size before relaxing)
- .debug_str     0x0000078f       0x38 obj/default/src/reservoirs/MilkReservoir.o
-                                 0xda (size before relaxing)
- .debug_str     0x000007c7       0x3a obj/default/src/reservoirs/SugarReservoir.o
-                                 0xdf (size before relaxing)
- .debug_str     0x00000801      0x15c ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
-                                0x1e5 (size before relaxing)
- .debug_str     0x0000095d       0x99 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
-                                0x168 (size before relaxing)
- .debug_str     0x000009f6       0xb0 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
-                                0x1cd (size before relaxing)
- .debug_str     0x00000aa6       0x1f ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
-                                 0xfe (size before relaxing)
- .debug_str     0x00000ac5       0x3e ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
-                                 0x85 (size before relaxing)
- .debug_str     0x00000b03       0x30 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
-                                0x117 (size before relaxing)
- .debug_str     0x00000b33       0x20 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
-                                0x105 (size before relaxing)
- .debug_str     0x00000b53       0x1b ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
-                                0x104 (size before relaxing)
+ .debug_str     0x00000000      0x863 obj/default/hello_world_small.o
+                                0x8c4 (size before relaxing)
+ .debug_str     0x00000863       0x40 obj/default/src/Controller.o
+                                0x487 (size before relaxing)
+ .debug_str     0x000008a3       0x33 obj/default/src/Display.o
+                                0x377 (size before relaxing)
+ .debug_str     0x000008d6       0x2d obj/default/src/Selector.o
+                                0x226 (size before relaxing)
+ .debug_str     0x00000903       0x42 obj/default/src/reservoirs/ChocolateReservoir.o
+                                0x103 (size before relaxing)
+ .debug_str     0x00000945       0x3a obj/default/src/reservoirs/CoffeReservoir.o
+                                 0xef (size before relaxing)
+ .debug_str     0x0000097f       0x38 obj/default/src/reservoirs/MilkReservoir.o
+                                 0xea (size before relaxing)
+ .debug_str     0x000009b7       0x3a obj/default/src/reservoirs/SugarReservoir.o
+                                 0xef (size before relaxing)
+ .debug_str     0x000009f1       0x3a obj/default/src/reservoirs/WaterReservoir.o
+                                0x16b (size before relaxing)
+ .debug_str     0x00000a2b      0x163 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
+                                0x1f5 (size before relaxing)
+ .debug_str     0x00000b8e       0x99 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+                                0x178 (size before relaxing)
+ .debug_str     0x00000c27       0x59 ../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
+                                 0xcb (size before relaxing)
+ .debug_str     0x00000c80       0x5e ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
+                                0x144 (size before relaxing)
+ .debug_str     0x00000cde       0x24 ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
+                                0x110 (size before relaxing)
+ .debug_str     0x00000d02       0x86 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x1dd (size before relaxing)
+ .debug_str     0x00000d88       0x38 ../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                0x1ce (size before relaxing)
+ .debug_str     0x00000dc0       0x33 ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                                0x124 (size before relaxing)
+ .debug_str     0x00000df3       0x1f ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                0x10e (size before relaxing)
+ .debug_str     0x00000e12       0x3e ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                                 0x95 (size before relaxing)
+ .debug_str     0x00000e50       0x30 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                0x127 (size before relaxing)
+ .debug_str     0x00000e80       0x20 ../novoapp_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                0x115 (size before relaxing)
+ .debug_str     0x00000ea0       0x1b ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                                0x114 (size before relaxing)
+ .debug_str     0x00000ebb      0x104 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+                                0x15b (size before relaxing)
 
-.debug_loc      0x00000000      0x5f5
+.debug_loc      0x00000000     0x1134
  *(.debug_loc)
- .debug_loc     0x00000000       0xaa obj/default/hello_world_small.o
- .debug_loc     0x000000aa      0x246 obj/default/src/Controller.o
- .debug_loc     0x000002f0      0x18c obj/default/src/Display.o
- .debug_loc     0x0000047c       0x3c obj/default/src/Selector.o
- .debug_loc     0x000004b8       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
- .debug_loc     0x000004d8       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
- .debug_loc     0x000004f8       0x41 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_loc     0x00000539       0x1f ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_loc     0x00000558       0x4b ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .debug_loc     0x000005a3       0x52 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_loc     0x00000000      0x128 obj/default/hello_world_small.o
+ .debug_loc     0x00000128      0x414 obj/default/src/Controller.o
+ .debug_loc     0x0000053c      0x362 obj/default/src/Display.o
+ .debug_loc     0x0000089e       0x4f obj/default/src/Selector.o
+ .debug_loc     0x000008ed       0x26 obj/default/src/reservoirs/WaterReservoir.o
+ .debug_loc     0x00000913       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x00000933       0x20 ../novoapp_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x00000953      0x244 ../novoapp_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_loc     0x00000b97       0x4c ../novoapp_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_loc     0x00000be3       0x21 ../novoapp_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_loc     0x00000c04       0x41 ../novoapp_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000c45       0x7e ../novoapp_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x00000cc3       0x7d ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_loc     0x00000d40       0x1f ../novoapp_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_loc     0x00000d5f       0x4b ../novoapp_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_loc     0x00000daa       0x52 ../novoapp_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_loc     0x00000dfc      0x338 c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -555,18 +680,22 @@ LOAD c:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7
  *(.debug_varnames)
 
 .debug_alt_sim_info
-                0x00000000       0x30
+                0x00000000       0x60
  *(.debug_alt_sim_info)
  .debug_alt_sim_info
                 0x00000000       0x30 ../novoapp_bsp//obj/HAL/src/crt0.o
+ .debug_alt_sim_info
+                0x00000030       0x30 ../novoapp_bsp/\libhal_bsp.a(alt_busy_sleep.o)
                 0x00010000                __alt_data_end = 0x10000
                 0x00010000                PROVIDE (__alt_stack_pointer, __alt_data_end)
-                0x00008830                PROVIDE (__alt_stack_limit, __alt_stack_base)
-                0x00008830                PROVIDE (__alt_heap_start, end)
+                0x00008f9c                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x00008f9c                PROVIDE (__alt_heap_start, end)
                 0x00010000                PROVIDE (__alt_heap_limit, 0x10000)
 OUTPUT(novoapp.elf elf32-littlenios2)
 
-.debug_ranges   0x00000000       0xc0
+.debug_ranges   0x00000000      0x128
  .debug_ranges  0x00000000       0x20 ../novoapp_bsp//obj/HAL/src/crt0.o
  .debug_ranges  0x00000020       0x58 obj/default/hello_world_small.o
- .debug_ranges  0x00000078       0x48 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_ranges  0x00000078       0x20 obj/default/src/Controller.o
+ .debug_ranges  0x00000098       0x48 obj/default/src/Display.o
+ .debug_ranges  0x000000e0       0x48 ../novoapp_bsp/\libhal_bsp.a(alt_load.o)

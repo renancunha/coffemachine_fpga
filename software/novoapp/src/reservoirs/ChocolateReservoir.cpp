@@ -2,7 +2,7 @@
 
 
 ChocolateReservoir::ChocolateReservoir(){
-
+	this->amount = 10;
 }
 
 void ChocolateReservoir::setAmount(int amount)
